@@ -116,6 +116,11 @@ p{
 #r, #r h1, #r h2 {
   color: #9D6F26;
 }
+
+#d, #d h1, #d h2 {
+  color: #76F01D;
+}
+
 /* Overwriting fullPage.js tooltip color
 * --------------------------------------- */
 #pp-nav.custom .pp-tooltip{
