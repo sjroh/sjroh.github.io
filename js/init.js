@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
       menu: '#menu',
       anchors: ['me', 'projects', 'r', 'd', 'rdv', 'kags'],
-      sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C', '#2C3E50', '#500000'],
+      sectionsColor: ['white', '#ee005a', '#CCC69F', '#39C', '#2C3E50', '#500000'],
       navigation: {
         'position': 'right',
         'tooltips': ['Me', 'Projects', 'R for Resistance', 'D for Debug', 'RaspberryDropVoice', 'KoreanAggies']
