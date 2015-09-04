@@ -2,190 +2,162 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" media="screen" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" /> -->
+    <meta name="Resource-type" content="Document" />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+  	<link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css" />
+  	<link rel="stylesheet" type="text/css" href="./css/main.css" />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-    <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
-    <script type="text/javascript">
-  		$(document).ready(function() {
+  	<script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
+  	<script type="text/javascript" src="./js/init.js"></script>
 
-  			/*
-  			* Plugin intialization
-  			*/
-  	    	$('#pagepiling').pagepiling({
-  	    		menu: '#menu',
-  	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-  			    sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
-  			    navigation: {
-  			    	'position': 'right',
-  			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
-  			   	},
-  			    afterRender: function(){
-  			    	$('#pp-nav').addClass('custom');
-  			    },
-  			    afterLoad: function(anchorLink, index){
-  			    	if(index>1){
-  			    		$('#pp-nav').removeClass('custom');
-  			    	}else{
-  			    		$('#pp-nav').addClass('custom');
-  			    	}
-  			    }
-  			});
-
-
-  			/*
-  		    * Internal use of the demo website
-  		    */
-  		    $('#showExamples').click(function(e){
-  				e.stopPropagation();
-  				e.preventDefault();
-  				$('#examplesList').toggle();
-  			});
-
-  			$('html').click(function(){
-  				$('#examplesList').hide();
-  			});
-  	    });
-      </script>
       <style>
       /* Section 1
-     * --------------------------------------- */
-    #section1 h1{
-      color: #444;
-    }
-    #section1 p{
-      color: #333;
-      color: rgba(0,0,0,0.3);
-    }
-    #section1 img{
-      margin: 20px 0;
-      opacity: 0.7;
-    }
+  	 * --------------------------------------- */
+  	#section1 h1{
+  		color: #444;
+  	}
+  	#section1 p{
+  		color: #333;
+  		color: rgba(0,0,0,0.3);
+  	}
+  	#section1 img{
+  		margin: 20px 0;
+  		opacity: 0.7;
+  	}
 
-    /* Section 2
-     * --------------------------------------- */
-    #section2 h1,
-    #section2 p{
-      z-index: 3;
-    }
-    #section2 p{
-      opacity: 0.8;
-    }
+  	/* Section 2
+  	 * --------------------------------------- */
+  	#section2 h1,
+  	#section2 p{
+  		z-index: 3;
+  	}
+  	#section2 p{
+  		opacity: 0.8;
+  	}
 
-    #section2 #colors{
-      right: 60px;
-      bottom: 0;
-      position: absolute;
-      height: 413px;
-      width: 258px;
-      background-image: url(imgs/colors.gif);
-      background-repeat: no-repeat;
-    }
+  	#section2 #colors{
+  		right: 60px;
+  		bottom: 0;
+  		position: absolute;
+  		height: 413px;
+  		width: 258px;
+  		background-image: url(imgs/colors.gif);
+  		background-repeat: no-repeat;
+  	}
 
-    /* Section 3
-     * --------------------------------------- */
-    #section3 #colors{
-      left: 60px;
-      bottom: 0;
-    }
-    #section3 p{
-      color: #757575;
-    }
+  	/* Section 3
+  	 * --------------------------------------- */
+  	#section3 #colors{
+  		left: 60px;
+  		bottom: 0;
+  	}
+  	#section3 p{
+  		color: #757575;
+  	}
 
-    #colors2,
-    #colors3{
-      position: absolute;
-      height: 163px;
-      width: 362px;
-      z-index: 1;
-      background-repeat: no-repeat;
-      left: 0;
-      margin: 0 auto;
-      right: 0;
-    }
-    #colors2{
-      background-image: url(imgs/colors2.gif);
-      top:0;
-    }
-    #colors3{
-      background-image: url(imgs/colors3.gif);
-      bottom:0;
-    }
+  	#colors2,
+  	#colors3{
+  		position: absolute;
+  		height: 163px;
+  		width: 362px;
+  		z-index: 1;
+  		background-repeat: no-repeat;
+  		left: 0;
+  		margin: 0 auto;
+  		right: 0;
+  	}
+  	#colors2{
+  		background-image: url(imgs/colors2.gif);
+  		top:0;
+  	}
+  	#colors3{
+  		background-image: url(imgs/colors3.gif);
+  		bottom:0;
+  	}
 
-    /* Section 4
-     * --------------------------------------- */
-    #section4 p{
-      opacity: 0.6;
-    }
+  	/* Section 4
+  	 * --------------------------------------- */
+  	#section4 p{
+  		opacity: 0.6;
+  	}
 
-    /* Overwriting fullPage.js tooltip color
-    * --------------------------------------- */
-    #pp-nav.custom .pp-tooltip{
-      color: #AAA;
-    }
-    #markup{
-      display: block;
-      width: 450px;
-      margin: 20px auto;
-      text-align: left;
-    }
+  	/* Overwriting fullPage.js tooltip color
+  	* --------------------------------------- */
+  	#pp-nav.custom .pp-tooltip{
+  		color: #AAA;
+  	}
+  	#markup{
+  		display: block;
+  		width: 450px;
+  		margin: 20px auto;
+  		text-align: left;
+  	}
 
   </style>
 
-    <title>Si Jine Roh</title>
   </head>
-
   <body>
     <ul id="menu">
-  		<li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
-  		<li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
-  		<li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
-  		<li data-menuanchor="page4"><a href="#page4">Page 4</a></li>
+  		<li data-menuanchor="me" class="active"><a href="#me">Me</a></li>
+  		<li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+  		<li data-menuanchor="r"><a href="#r">R for Resistance</a></li>
+  		<li data-menuanchor="d"><a href="#d">D for Debug</a></li>
+      <li data-menuanchor="rdv"><a href="#rdv">RaspberryDropVoice</a></li>
+      <li data-menuanchor="kags"><a href="#kags">KoreanAggies</a></li>
+      <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
   	</ul>
 
-
-  	<div id="pagepiling">
-  	    <div class="section" id="section1">
-  	    	<h1>pagePiling.js</h1>
-  			<p>Create an original scrolling site</p>
-  			<img src="imgs/pagePiling-plugin.gif" alt="pagePiling" />
-  			<br />
-
-  	    </div>
-  	    <div class="section" id="section2">
-  	    	<div class="intro">
-  	    		<div id="colors"></div>
-  	    		<h1>jQuery plugin</h1>
-  	    		<p>Pile your sections one over another and access them scrolling or by URL!</p>
-  	    		<div id="markup">
-  	    			<script src="https://gist.github.com/alvarotrigo/4a87a4b8757d87df8a72.js"></script>
-  	    		</div>
-  	    	</div>
-  	    </div>
-  	    <div class="section" id="section3">
-  	    	<div class="intro">
-  	    		<h1>Configurable</h1>
-  	    		<p>Plenty of options, methods and callbacks to use.</p>
-  	    		<div id="colors2"></div>
-  	    		<div id="colors3"></div>
-  	    	</div>
-  	    </div>
-  	    <div class="section" id="section4">
-  	    	<div class="intro">
-  	    		<h1>Compatible</h1>
-  	    		<p>Designed to work on tablet and mobile devices.</p>
-  	    		<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
-  	    	</div>
-  	    </div>
+    <div id="pagepiling">
+      <div class="section" id="me">
+        <h1 id="myname">Si Jine Roh</h1>
+        <p>Computer Engineering (CS track)<br>Texas A&M University Class of 2016</p>
+      </div>
+  	  <div class="section" id="projects">
+        <h1>Projects</h1>
+  	  	<p>I did below projects for FUN<br>
+        And that's what we DO!</p>
+	    </div>
+	    <div class="section" id="r">
+  	    <h1>R for Resistance</h1>
+        <h2>Java, Android</h2>
+        <p>Resistance Calculator<br>Published on Google Play Store<br>
+        [LINK]
+        </p>
+	    </div>
+	    <div class="section" id="d">
+  	    <h1>D for Debug</h1>
+        <h2>Java, Android</h2>
+        <p>Hidden-Object Game<br>
+          [Screenshots will update soon]<br>
+          Prototype finished<br>
+          Working on more features
+        </p>
+	    </div>
+	    <div class="section" id="rdv">
+  	    <h1>RaspberryDropVoice</h1>
+        <h2>Raspberry Pi, Python, Dropbox API</h2>
+        <p>Voice mail system using Dropbox<br>
+          I built this for my family in South Korea<br>
+          (And I always forgot to make a phone call to them...)<br>
+          [Pictures will update soon]
+        </p>
+	    </div>
+	    <div class="section" id="kags">
+  	    <h1>KoreanAggies</h1>
+        <h2>Web, CMS</h2>
+        <p>Needed to use CMS to migrate user database from old version<br>
+          Make few changes on css to show MAROON!
+        </p>
+	    </div>
+	    <div class="section" id="contact">
+  	    <h1>Contact</h1>
+        <p>sijine@gmail.com<br>
+          Thank you very much
+        </p>
+	    </div>
   	</div>
-
   </body>
-</html>
+  </html>
