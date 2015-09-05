@@ -1,83 +1,153 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Resource-type" content="Document" />
+    <meta name="description" content="gitHub page of Si Jine Roh">
+    <meta name="author" content="Si Jine Roh">
 
-  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
-  	<link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css" />
-  	<link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/main.css" />
 
-  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-  	<script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
-  	<script type="text/javascript" src="./js/init.js"></script>
+    <title>Si Jine Roh</title>
   </head>
-  
-  <body>
-    <ul id="menu">
-  		<li data-menuanchor="me" class="active"><a href="#me">Me</a></li>
-  		<li data-menuanchor="projects"><a href="#projects">Projects</a></li>
-  		<li data-menuanchor="r"><a href="#r">R for Resistance</a></li>
-  		<li data-menuanchor="d"><a href="#d">D for Debug</a></li>
-      <li data-menuanchor="rdv"><a href="#rdv">RaspberryDropVoice</a></li>
-      <li data-menuanchor="kags"><a href="#kags">KoreanAggies</a></li>
-      <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-  	</ul>
 
-    <div id="pagepiling">
-      <div class="section" id="me">
-        <h1 id="myname">Si Jine Roh</h1>
-        <br>
-        <p>Computer Engineering (CS track)<br>Texas A&M University Class of 2016</p>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Si Jine Roh</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#r">R for Resistance</a>
+            </li>
+            <li>
+              <a href="#d">D for Debug</a>
+            </li>
+            <li>
+              <a href="#rdv">RaspberryDropVoice</a>
+            </li>
+            <li>
+              <a href="#kags">KoreanAggies</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-  	  <div class="section" id="projects">
-        <h1>Projects</h1>
-  	  	<p>I did below projects for FUN<br>
-        And that's what we DO!</p>
-	    </div>
-	    <div class="section" id="r">
-  	    <h1>R for Resistance</h1>
-        <h2>Java, Android</h2>
-        <br>
-        <p>Resistance Calculator<br>Published on Google Play Store<br><br>
-        <a href="https://play.google.com/store/apps/details?id=roh.programmer.rforresistance"><img src="http://developer.android.com/images/brand/en_app_rgb_wo_60.png" alt="" /></a>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+      <div class="headline">
+        <div class="container">
+          <h1>Si Jine Roh</h1>
+          <h3>Computer Engineering<br>Texas A&M University Class of 2016</h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+      <hr class="featurette-divider">
+      <!-- R for Resistance -->
+      <div class="featurette" id="r">
+        <img class="featurette-image img-circle img-responsive pull-right" src="img/r-1.png">
+        <h2 class="featurette-heading">R for Resistance</span></h2>
+        <p class="lead">
+          <strong><span class="text-muted">Java, Android</span></strong><br>
+          Resistance Calculator<br>
+          Published on Google Play Store<br><br>
+          <a href="https://play.google.com/store/apps/details?id=roh.programmer.rforresistance">
+            <img src="img/google_play.png" alt="Click to see on Google Play Store">
+          </a>
         </p>
-	    </div>
-	    <div class="section" id="d">
-  	    <h1>D for Debug</h1>
-        <h2>Java, Android</h2>
-        <br>
-        <p>Hidden-Object Game<br>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- D for Debug -->
+      <div class="featurette" id="d">
+        <img class="featurette-image img-circle img-responsive pull-left" src="img/d-1.png">
+        <h2 class="featurette-heading">D for Debug</span></h2>
+        <p class="lead">
+          <strong><span class="text-muted">Java, Android</span></strong><br>
+          Hidden-Object Game<br>
           Prototype finished<br>
-          Working on more features<br>
-          <!-- [Screenshots will update soon] -->
+          Working on more features
         </p>
-	    </div>
-	    <div class="section" id="rdv">
-  	    <h1>RaspberryDropVoice</h1>
-        <h2>Raspberry Pi, Python, Dropbox API</h2>
-        <br>
-        <p>Voice mail system using Dropbox<br>
-          I built this for my family in South Korea<br>
-          <span class="">(Because I always forgot to make a phone call...)</span><br>
-          <!-- [Pictures will update soon] -->
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- RaspberryDropVoice -->
+      <div class="featurette" id="rdv">
+        <img class="featurette-image img-circle img-responsive pull-right" src="img/rdv-1.jpeg">
+        <h2 class="featurette-heading">RaspberryDropVoice</span></h2>
+        <p class="lead">
+          <strong><span class="text-muted">Raspberry Pi, Python, Dropbox API</span></strong><br>
+          Voice mail system using Dropbox<br>
+          I built this for my family in South Korea
         </p>
-	    </div>
-	    <div class="section" id="kags">
-  	    <h1>KoreanAggies</h1>
-        <h2>Web, CMS</h2>
-        <br>
-        <p>Needed to use CMS to migrate user database from old version<br>
-          Make few changes on css to show MAROON!
+        <p>
+          (Because I always forgot to make a phone call to them...)
         </p>
-	    </div>
-	    <div class="section" id="contact">
-  	    <h1>Contact</h1>
-        <br>
-        <p>sijine@gmail.com
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- KoreanAggies -->
+      <div class="featurette" id="kags">
+        <img class="featurette-image img-circle img-responsive pull-left" src="img/kags-1.png">
+        <h2 class="featurette-heading">KoreanAggies</span></h2>
+        <p class="lead">
+          <strong><span class="text-muted">Web, CMS</span></strong><br>
+          Needed to use CMS to migrate user database
         </p>
-	    </div>
-  	</div>
+        <p class="text-right lead">
+          <a href="http://koreanaggies.net" target="_blank">Visit Korean Aggies</a>
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- Contact -->
+      <div class="featurette" id="contact">
+        <h2 class="featurette-heading text-center">Contact</span></h2>
+        <p class="lead text-center">
+          sijine@gmail.com
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- Footer -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Si Jine Roh 2015</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
   </html>
