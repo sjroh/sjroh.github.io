@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,162 +9,174 @@
     <meta name="author" content="Si Jine Roh">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" type="text/css" href="./css/pictonic.css">
+<!--[if lt IE 8]><script src="./js/pictonic.min.js"></script><![endif]-->
+    
     <title>Si Jine Roh</title>
-  </head>
+</head>
 
-  <body>
-
-    <!-- Navigation -->
+<body>
+<header>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Si Jine Roh</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#r">R for Resistance</a>
-            </li>
-            <li>
-              <a href="#d">D for Debug</a>
-            </li>
-            <li>
-              <a href="#awifi">Arduino WiFi</a>
-            </li>
-            <li>
-              <a href="#rdv">RaspberryDropVoice</a>
-            </li>
-            <li>
-              <a href="#kags">KoreanAggies</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
-
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-      <div class="headline">
         <div class="container">
-          <h1>Si Jine Roh</h1>
-          <h3>Computer Engineering<br>Texas A&M University Class of 2016</h3>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Si Jine Roh</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://sjroh.github.io/resume.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#project">Project</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </header>
+    </nav>
+</header>
 
-    <!-- Page Content -->
+<div class="container-fluid text-center headline part">
     <div class="container">
-      <hr class="featurette-divider">
-      <!-- R for Resistance -->
-      <div class="featurette text-left" id="r">
-        <img class="featurette-image img-circle img-responsive pull-right" src="img/r-1.png">
-        <h2 class="featurette-heading">R for Resistance</span></h2>
-        <p class="lead">
-          <strong><span class="text-muted">Java, Android</span></strong><br>
-          Resistance Calculator<br>
-          Published on Google Play Store<br><br>
-          <a href="https://play.google.com/store/apps/details?id=roh.programmer.rforresistance">
-            <img src="img/google_play.png" alt="Click to see on Google Play Store">
-          </a>
-        </p>
-      </div>
-
-      <hr class="featurette-divider">
-      <!-- D for Debug -->
-      <div class="featurette text-right" id="d">
-        <img class="featurette-image img-circle img-responsive pull-left" src="img/d-1.png">
-        <h2 class="featurette-heading">D for Debug</span></h2>
-        <p class="lead">
-          <strong><span class="text-muted">Java, Android</span></strong><br>
-          Hidden-Object Game<br>
-          Prototype finished<br>
-          Working on more features
-        </p>
-      </div>
-
-      <hr class="featurette-divider">
-      <!-- Arduino WiFi -->
-      <div class="featurette text-left" id="awifi">
-        <img class="featurette-image img-circle img-responsive pull-right" src="img/arduino-wifi-diagram.png">
-        <h2 class="featurette-heading">Arduino WiFi</span></h2>
-        <p class="lead">
-          <strong><span class="text-muted">Arduino, C</span></strong><br>
-          Part of my team project, "Home Remote Control"<br>
-          Can turn on and off LED through WiFi<br><br>
-          <a href="https://github.com/sjroh/ArduinoWifi"><img src="img/github.png" alt="See this code on GitHub" /></a>
-        </p>
-      </div>
-
-      <hr class="featurette-divider">
-      <!-- RaspberryDropVoice -->
-      <div class="featurette text-right" id="rdv">
-        <img class="featurette-image img-circle img-responsive pull-left" src="img/rdv-1.jpeg">
-        <h2 class="featurette-heading">RaspberryDropVoice</span></h2>
-        <p class="lead">
-          <strong><span class="text-muted">Raspberry Pi, Python, Dropbox API</span></strong><br>
-          Voice mail system using Dropbox<br>
-          I built this for my family in South Korea
-        </p>
-        <p>
-          (Because I always forgot to make a phone call to them...)
-        </p>
-      </div>
-
-      <hr class="featurette-divider">
-      <!-- KoreanAggies -->
-      <div class="featurette text-left" id="kags">
-        <img class="featurette-image img-circle img-responsive pull-right" src="img/kags-1.png">
-        <h2 class="featurette-heading">KoreanAggies</span></h2>
-        <p class="lead">
-          <strong><span class="text-muted">Web, CMS</span></strong><br>
-          Needed to use CMS to migrate user database
-        </p>
-        <p class="lead">
-          <a class="btn btn-default" href="http://koreanaggies.net" target="_blank">Visit Korean Aggies</a>
-        </p>
-      </div>
-
-      <hr class="featurette-divider">
-      <!-- Contact -->
-      <div class="featurette" id="contact">
-        <h2 class="featurette-heading text-center">Contact</span></h2>
-        <p class="lead text-center">
-          sijine@gmail.com<br>
-          programmeroh@gmail.com
-        </p>
-      </div>
-
-      <hr class="featurette-divider">
-      <!-- Footer -->
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright &copy; Si Jine Roh 2015</p>
-          </div>
-        </div>
-      </footer>
+        <h1>Si Jine Roh</h1>
+        <h4>Computer Engineering<br>Texas A&amp;M University Class of 2016</h4>
     </div>
-    <!-- /.container -->
+    <div class="btn-group btn-group-social" role="group">
+        <a href="http://sjroh.github.io/resume.pdf" target="_blank" class="btn btn-default btn-social fa fa-file-text-o fa-lg" data-toggle="tooltip" data-placement="bottom" title="Resume"></a>
+        <a href="https://www.linkedin.com/in/sijineroh
+" target="_blank" class="btn btn-default btn-social fa fa-linkedin fa-lg" data-toggle="tooltip" data-placement="bottom" title="Linkedin"></a>
+        <a href="https://github.com/sjroh" target="_blank" class="btn btn-default btn-social fa fa-github-alt fa-lg" data-toggle="tooltip" data-placement="bottom" title="Github"></a>
+    </div>
+</div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<div class="container-fluid part project">
+    <div class="container text-center">
+        <h1>Project</h1>
+    </div>
+    <div class="container list-project">
+        <div class="row"> <!--  Row  -->
+            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
+                <img src="./project/semicolonholes-thumb.jpg" class="img-responsive" alt="Website for project team.">
+                <h4>Semicolon Holes</h4>
+                <div class="project-description">
+                    Website for project team.<br/>Used CodeIgniter Framework.
+                </div>
+                <div class="list-technology">
+                    <i class="icon-html5-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                    <i class="icon-css3-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                    <i class="icon-prog-js02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
+                    <i class="icon-prog-php02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="PHP"></i>
+                    <i class="icon-dbs-mysql fa-lg" data-toggle="tooltip" data-placement="bottom" title="MySQL"></i>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
+                <img src="./project/goalachiever-thumb.jpg" class="img-responsive" alt="The application allows the users to focus on their work for a certain period of time and feel like they are playing a game. This application will use a lock/unlock screen detector to catch the motion of the user unlocking his/her smartphones.">
+                <h4>Goal Achiever</h4>
+                <div class="project-description">
+                    With DaeYoung Yoon<br/>
+                    The application allows the users to focus on their work for a certain period of time and feel like they are playing a game.
+                </div>
+                <div class="list-technology">
+                    <i class="icon-android fa-lg" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
+                <img src="./project/rforresistance-thumb.png" class="img-responsive" alt="Resistance calculator. Published on Google Play Store.">
+                <h4>R for Resistance</h4>
+                <div class="project-description">
+                    Resistance Calculator based on color codes on the resistor.<br/>Published on Google Play Store.
+                </div>
+                <div class="list-technology">
+                    <i class="icon-android fa-lg" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
+                    <a href="https://play.google.com/store/apps/details?id=roh.programmer.rforresistance" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Check Google Play Store">
+                        <img src="img/google_play.png" alt="Click to see on Google Play Store">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
+                <img src="./project/dfordebug-thumb.png" class="img-responsive" alt="Hidden-Object Game in Android Application. Finished with prototype.">
+                <h4>D for Debug</h4>
+                <div class="project-description">
+                    Hidden-Object Game in Android Application.<br/>
+                    Finished with prototype.
+                </div>
+                <div class="list-technology">
+                    <i class="icon-android fa-lg" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
+                </div>
+            </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-  </html>
+            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
+                <img src="./project/arduinowifi-thumb.png" class="img-responsive" alt="Part of my team project, Home Remote Control. Can turn on and off LED through WiFi.">
+                <h4>Arduino WiFi</h4>
+                <div class="project-description">
+                    Part of my team project, "Home Remote Control"<br/>Can turn on and off LED through WiFi.
+                </div>
+                <div class="list-technology">
+                    <i class="icon-prog-c fa-lg" data-toggle="tooltip" data-placement="bottom" title="C"></i>
+                    <i class="fa fa-wifi fa-lg" data-toggle="tooltip" data-placement="bottom" title="WiFi"></i>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
+                <img src="./project/raspberrydropvoice-thumb.jpg" class="img-responsive" alt="Voice mail system using Dropbox API and Python on Raspberrry Pi.">
+                <h4>Raspberry Drop Voice</h4>
+                <div class="project-description">
+                    Voice mail system using Dropbox API and Python on Raspberrry Pi.
+                </div>
+                <div class="list-technology">
+                    <i class="icon-prog-python fa-lg" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
+                    <i class="icon-dropbox fa-lg" data-toggle="tooltip" data-placement="bottom" title="Dropbox API"></i>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
+                <img src="./project/koreanaggies-thumb.png" class="img-responsive" alt="Korean Student Association Texasa A&amp;M University website. Needed to use CMS(XE) to migrate user database.">
+                <h4>Korean Aggies</h4>
+                <div class="project-description">
+                    Korean Student Association Texasa A&amp;M University website. Needed to use CMS(XE) to migrate user database.
+                </div>
+                <div class="list-technology">
+                    <i class="icon-html5-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                    <i class="icon-css3-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                    <i class="icon-prog-js02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
+                    <i class="icon-prog-php02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="PHP"></i>
+                    <i class="icon-dbs-mysql fa-lg" data-toggle="tooltip" data-placement="bottom" title="MySQL"></i>
+                </div>
+            </div>
+            
+        </div> <!--  Row Ends -->
+    </div>
+</div>
+
+<div class="container-fluid part">
+    <h2 class="featurette-heading text-center">Contact</span></h2>
+    <p class="lead text-center">
+        sjroh@tamu.edu
+    </p>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+    
+<script src="js/main.js"></script>
+
+</body>
+</html>
