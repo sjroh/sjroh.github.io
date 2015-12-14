@@ -1,4 +1,6 @@
 body {padding-top: 50px; padding-bottom: 25px;}
+a {color: black;}
+
 .part {padding-top: 50px; padding-bottom: 70px;}
 .btn-group-social {margin-top: 15px;}
 .btn-social {padding: 12px;}
@@ -7,6 +9,6 @@ body {padding-top: 50px; padding-bottom: 25px;}
 .list-project {margin-top: 10px;}
 .item-project {margin-top:20px;}
 .item-project img {background-color: #FFFFFF;}
-.list-technology {margin: 10px; font-size: 20px;}
+.list-technology {margin-right: 10px; margin-bottom: 10px; font-size: 20px; float:right;}
 .list-technology img {height: 28px;}
-.project-description {display: none;}
+.project-description {height: 100px;}
