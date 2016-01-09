@@ -7,8 +7,8 @@ a {color: black;}
 
 .project {background: #EEEEEE}
 .list-project {margin-top: 10px;}
-.item-project {margin-top:20px;}
+.item-project {margin: 10px 0;}
 .item-project img {background-color: #FFFFFF;}
-.list-technology {margin-right: 10px; margin-bottom: 10px; font-size: 20px; float:right;}
+.list-technology {margin-right: 10px; margin-bottom: 10px; font-size: 20px; float:right; height: 36px; max-height:36px;}
 .list-technology img {height: 28px;}
-.project-description {height: 100px;}
+.project-description {height: 100px; }
