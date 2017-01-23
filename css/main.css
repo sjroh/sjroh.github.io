@@ -15,11 +15,8 @@ a {color: black;}
 
 body {
   /*font-family: 'Roboto', sans-serif;*/
-
-
-    font-family: 'Raleway', sans-serif;
-
-
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
   background-color: #AAAAAA;
 }
 
@@ -32,18 +29,57 @@ a:hover {
   color: #AAAAAA;
 }
 
+/*div {
+  border: 1px solid black;
+}*/
 
 #resume {
   background-color: #FFFFFF;
   min-width: 750px;
 }
+
 #resume-header, #resume-body {
   margin: 0;
   padding: 0;
 }
+#personal-information-contact {
+  margin-top: 10px;
+}
+
 #resume-footer {
   margin: 15px;
 }
-#personal-information-contact {
-  margin-top: 15px;
+
+#resume-body-skill, #resume-body-education, #resume-body-award, #resume-body-experience, #resume-body-project, #resume-body-activity {
+  margin: 0;
+  padding: 0;
+}
+
+
+#list-skill, #list-experience {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+#list-skill li {
+  float: left;
+  color: #000000;
+  margin: 3px;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#list-skill li:hover, #list-skill li.active {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+
+.item-experience {
+  margin-bottom: 20px;
+}
+.experience-period {
+  margin-top: 10px;
 }
