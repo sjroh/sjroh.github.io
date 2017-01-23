@@ -1,4 +1,4 @@
-body {padding-top: 50px; padding-bottom: 25px;}
+/*body {padding-top: 50px; padding-bottom: 25px;}
 a {color: black;}
 
 .part {padding-top: 50px; padding-bottom: 70px;}
@@ -11,4 +11,39 @@ a {color: black;}
 .item-project img {background-color: #FFFFFF;}
 .list-technology {margin-right: 10px; margin-bottom: 10px; font-size: 20px; float:right; height: 36px; max-height:36px;}
 .list-technology img {height: 28px;}
-.project-description {height: 100px; }
+.project-description {height: 100px; }*/
+
+body {
+  /*font-family: 'Roboto', sans-serif;*/
+
+
+    font-family: 'Raleway', sans-serif;
+
+
+  background-color: #AAAAAA;
+}
+
+a:link {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+a:hover {
+  color: #AAAAAA;
+}
+
+
+#resume {
+  background-color: #FFFFFF;
+  min-width: 750px;
+}
+#resume-header, #resume-body {
+  margin: 0;
+  padding: 0;
+}
+#resume-footer {
+  margin: 15px;
+}
+#personal-information-contact {
+  margin-top: 15px;
+}
