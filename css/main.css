@@ -1,14 +1,94 @@
-body {padding-top: 50px; padding-bottom: 25px;}
-a {color: black;}
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  background-color: #AAAAAA;
+}
 
-.part {padding-top: 50px; padding-bottom: 70px;}
-.btn-group-social {margin-top: 15px;}
-.btn-social {padding: 12px;}
+a, a:link {
+  text-decoration: none !important;
+  color: #000000;
+}
 
-.project {background: #EEEEEE}
-.list-project {margin-top: 10px;}
-.item-project {margin: 10px 0;}
-.item-project img {background-color: #FFFFFF;}
-.list-technology {margin-right: 10px; margin-bottom: 10px; font-size: 20px; float:right; height: 36px; max-height:36px;}
-.list-technology img {height: 28px;}
-.project-description {height: 100px; }
+a:hover {
+  color: #AAAAAA;
+}
+
+/*div {
+  border: 1px solid black;
+}*/
+
+#resume {
+  background-color: #FFFFFF;
+  min-width: 750px;
+}
+
+#resume-header, #resume-body {
+  margin: 0;
+  padding: 0;
+}
+
+#personal-information {
+  margin-top: 10px;
+}
+#personal-information-name h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#resume-body-skill, #resume-body-education, #resume-body-award, #resume-body-experience, #resume-body-project, #resume-body-activity {
+  margin: 0;
+  padding: 0;
+}
+
+/*#list-skill, #list-experience, #list-project, #list-education {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}*/
+
+#list-skill li {
+  float: left;
+  color: #000000;
+  margin: 3px;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#list-skill li:hover, #list-skill li.active {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+
+.section-title {
+  text-decoration: underline;
+}
+.section-sub-title {
+  font-weight: bold;
+}
+
+.item-experience, .item-project {
+  margin-bottom: 10px;
+}
+.experience-period, .project-period {
+  margin-top: 10px;
+}
+
+.project-detail {
+  display: none;
+}
+.detail-hide {
+  display: none;
+}
+
+.detail-show, .detail-hide {
+  cursor: pointer;
+}
+.detail-show:hover, .detail-hide:hover {
+  color: #AAAAAA;
+}
+
+#resume-footer {
+  margin: 15px;
+}

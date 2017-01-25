@@ -1,197 +1,656 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Resource-type" content="Document" />
-    <meta name="description" content="GitHub page of Si Jine Roh">
-    <meta name="author" content="Si Jine Roh">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Resource-type" content="Document" />
+  <meta name="description" content="GitHub page of Si Jine Roh">
+  <meta name="author" content="Si Jine Roh">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/pictonic.css">
-<!--[if lt IE 8]><script src="./js/pictonic.min.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--[if lt IE 8]><script src="./js/pictonic.min.js"></script><![endif]-->
 
-    <title>Si Jine Roh</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <title>SI JINE ROH</title>
 </head>
 
 <body>
-<header>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Si Jine Roh</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="http://sjroh.github.io/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#project">Project</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  <div id="resume" class="container">
+    <div id="resume-header">
+      <div id="personal-information" class="row">
+        <div id="personal-information-name" class="col-xs-8">
+          <h1>SI JINE ROH</h1>
         </div>
-    </nav>
-</header>
+        <div id="personal-information-contact" class="col-xs-4">
+          <address class="text-right">
+            <a href="mailto:sijine.roh@gmail.com" class="personal-information-link">
+              sijine.roh@gmail.com
+              &nbsp;
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <br>
+            <a href="tel:+19796765515" class="personal-information-link">
+              +1 (979) 676-5515
+              &nbsp;
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
 
-<div class="container-fluid text-center headline part">
-    <div class="container">
-        <h1>Si Jine Roh</h1>
-        <h4>Computer Engineering<br>Texas A&amp;M University Class of 2016</h4>
+            <br>
+            <a href="https://github.com/sjroh?utf8=%E2%9C%93&tab=repositories&q=&type=source" target="_blank" class="personal-information-link">
+              github.com/sjroh
+              &nbsp;
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+
+            <br>
+            <a href="https://www.linkedin.com/in/sijineroh" target="_blank" class="personal-information-link">
+              linkedin.com/in/sijineroh
+              &nbsp;
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </address>
+        </div>
+      </div> <!-- End of personal-information -->
+    </div> <!-- End of resume-header -->
+
+    <div id="resume-body">
+      <div class="row">
+
+        <div id="resume-body-left" class="col-xs-4 resume-body-item">
+
+          <!-- Education -->
+          <div id="resume-body-education" class="col-xs-12">
+            <h2 class="section-title">Education</h2>
+            <ul id="list-education" class="list-unstyled">
+              <li class="item-education">
+                <div class="row education-title">
+                  <div class="col-xs-12">
+                    <h4 class="section-sub-title">Texas A&M University</h4>
+                  </div>
+                </div>
+                <div class="row education-description">
+                  <div class="col-xs-12">
+                    <p class="text-right">
+                      College Station, Texas<br>
+                      B.S. in Computer Engineering<br>
+                      Graduated with Cum Laude (May 2016)
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="item-education">
+                <div class="row education-title">
+                  <div class="col-xs-12">
+                    <h4 class="section-sub-title">University of Arizona</h4>
+                  </div>
+                </div>
+                <div class="row education-description">
+                  <div class="col-xs-12">
+                    <p class="text-right">
+                      Tucson, Arizona<br>
+                      B.S. in Computer Engineering<br>
+                      Transferred to Texas A&M University
+                    </p>
+                  </div>
+                </div>
+              </li>
+          </div>
+
+          <!-- Skill -->
+          <div id="resume-body-skill" class="col-xs-12">
+            <h2 class="section-title">Skill</h2>
+            <ul id="list-skill" class="list-inline">
+              <li class="item-skill active" value="all">ALL</li>
+              <li class="item-skill" value="ccpp">C/C++</li>
+              <li class="item-skill" value="java">Java</li>
+              <li class="item-skill" value="python">Python</li>
+              <li class="item-skill" value="php">PHP</li>
+              <li class="item-skill" value="html">HTML</li>
+              <li class="item-skill" value="css">CSS</li>
+              <li class="item-skill" value="js">JavaScript</li>
+              <li class="item-skill" value="ruby">Ruby</li>
+              <li class="item-skill" value="rails">Rails</li>
+              <li class="item-skill" value="android">Android</li>
+              <li class="item-skill" value="mysql">MySQL</li>
+              <li class="item-skill" value="mongodb">MongoDB</li>
+              <li class="item-skill" value="arduino">Arduino</li>
+              <li class="item-skill" value="raspberrypi">Raspberry Pi</li>
+              <li class="item-skill" value="iot">IoT</li>
+              <li class="item-skill" value="git">Git</li>
+            </ul>
+          </div>
+
+          <!-- Activity -->
+          <div id="resume-body-activity" class="col-xs-12">
+            <h2 class="section-title">Activity</h2>
+            <ul id="list-activity" class="list-unstyled">
+              <li class="item-activity">
+                <h4 class="section-sub-title">UPE</h4>
+                <p class="text-right">
+                  Member of International Honor Society for the Computing & Information
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">CodeRED</h4>
+                <p class="text-right">
+                  University of Houston, Texas<br>
+                  Nov 2015
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">TAMUHACK</h4>
+                <p class="text-right">
+                  Texas A&M University, Texas<br>
+                  Oct 2015
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">Anadarko Show and Tell</h4>
+                <p class="text-right">
+                  Presenter<br>
+                  Sep 2015
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">Microsoft Korea Workshop</h4>
+                <p class="text-right">
+                  Microsoft Azure, Windows 8 application development<br>
+                  Mar 2013
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">ITU IT Volunteer</h4>
+                <p class="text-right">
+                  Teach basic computer skills to local students
+                  Nangi Village, Nepal<br>
+                  Jul 2012
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Award -->
+          <div id="resume-body-award" class="col-xs-12">
+            <h2 class="section-title">Award</h2>
+            <ul id="list-award" class="list-unstyled">
+              <li class="item-award">
+                <h4 class="section-sub-title">Dean’s Honor Award</h4>
+                <p class="text-right">
+                  The Dwight Look College of Engineering<br>
+                  Spring 2015
+                </p>
+              </li>
+              <li class="item-award">
+                <h4 class="section-sub-title">Certificate of Appreciation</h4>
+                <p class="text-right">
+                  Department of Computer Science & Engineering, Texas A&M University<br>
+                  Spring 2016
+                </p>
+              </li>
+            </ul>
+          </div>
+
+        </div> <!-- End of resume-body-left -->
+
+
+
+        <div id="resume-body-right" class="col-xs-8 resume-body-item">
+
+          <!-- Experience -->
+          <div id="resume-body-experience" class="col-xs-12">
+            <h2 class="section-title">Experience</h2>
+            <ul id="list-experience" class="list-unstyled">
+
+              <li class="item-experience" skill="ccpp git">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Research Assistant II</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    June 2016 - Present
+                  </div>
+                </div>
+                <div>
+                  Department of Neurosurgery, University of Texas Health Science Center at Houston
+                </div>
+
+                <ul>
+                  <li>
+                    Robotic surgery research lab in Department of Neurosurgery
+                  </li>
+                  <li>
+                    Developed motor control testing program
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-experience" skill="html css js java">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Undergraduate Research</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    Jan 2016 - May 2016
+                  </div>
+                </div>
+                <div>
+                  Department of Computer Science & Engineering, Texas A&M University
+                </div>
+                <ul>
+                  <li>
+                    Designed and developed UI for UI/UX user experience research
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-experience" skill="python ccpp">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Peer Teacher</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    Sep 2015 - May 2016
+                  </div>
+                </div>
+                <div>
+                  Department of Computer Science & Engineering, Texas A&M University
+                </div>
+                <ul>
+                  <li>
+                    Peer Teacher for intro classes in Computer Science
+                  </li>
+                  <li>
+                    Supported students to debug and understand program during lab sessions
+                  </li>
+                  <li>
+                    Received Certificate of Appreciation
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-experience" skill="html css js php mysql">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Web Developer & Administrator</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    May 2014 - May 2016
+                  </div>
+                </div>
+                <div>
+                  Korean Students Association, Texas A&M University
+                </div>
+                <ul>
+                  <li>
+                    Designed and developed Korean Students Association website
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-experience" skill="ruby rails html css js android mysql mongodb git">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Web & Android Developer</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    Aug 2012 - Apr 2013
+                  </div>
+                </div>
+                <div>
+                  O’square Co., Ltd., Seoul, South Korea
+                </div>
+                <ul>
+                  <li>
+                    Developed social activity recommender system in Ruby on Rails on AWS
+                  </li>
+                  <li>
+                    Developed Android application with native development toolkit
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-experience">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Technical Assistant</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    Feb 2012 - Jun 2012
+                  </div>
+                </div>
+                <div>
+                  Sunrin Internet High School, Seoul, Republic of Korea
+                </div>
+                <ul>
+                  <li>
+                    Providing technical assistance to fault, staff, and student in person
+                  </li>
+                  <li>
+                    Supporting 200 users and 300 computers on both software and hardware sides
+                  </li>
+                  <li>
+                    Managing school network and equipments
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-experience">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Sergeant</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    May 2010 - Feb 2012
+                  </div>
+                </div>
+                <div>
+                  Artillery School, Republic of Korea Army, South Korea
+                </div>
+                <ul>
+                  <li>
+                    Chief Assistant of troop information and education
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+
+
+          </div>
+
+          <!-- Project -->
+          <div id="resume-body-project" class="col-xs-12">
+            <h2 class="section-title">Project</h2>
+
+            <ul id="list-project" class="list-unstyled">
+
+              <li class="item-project" skill="python raspberrypi iot mongodb">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">My Sprikler</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Spring 2016
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Automated sprikler system based on weather forecast.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    Team project with Kyle Wahl & Abigail Rodriguez.<br>
+                    Wrote Python script running on Raspberry Pi.<br>
+                    The python script gather weather forecast information by using weather forecast API, schedule watering schedule on the database in Raspberry Pi, and run relay motors to flow the water based on the schedule.
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="python raspberrypi arduino ccpp">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Laser Harp</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Fall 2015
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Built MIDI compatible Laser Harp.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <img src="img/laser-harp.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Team project with Katherine Click & Sarah Sahibzada.<br>
+                    Built python script to generate analog audio output from Raspberry Pi based on the input from connected Arduino.<br>
+                    Built C code to generate MIDI output through MIDI shield on Arduino based on the input from connected lasers.<br>
+                    The harp has 15 laser inputs with photo-resistors through Arduino. Arduino is connected with Raspberry Pi to generate analog audio output. This harp was able to make MIDI output and analog audio output.
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="android git">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Goal Achiever</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Fall 2015
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Android application to make a productive time.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <img src="img/goal-1.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/goal-2.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/goal-3.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/goal-4.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Team project With DaeYoung Yoon (Designer).<br>
+                    Built an Android application allows the users to focus on their work for a certain period of time and feel like they are playing a game.<br>
+                    This application contains an alarm clock which counts unlock event by the user. Based on the unlocking event counter, the user can able to obtain reward points. The user is able to get more reward points, if they focused on their work longer and use their smartphone less. The user is able to obtain a piece of random gift card by spending their reward points.
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="android">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">R for Resistance</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Aug 2015
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Android application to calculate resistance.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <img src="img/r-1.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/r-2.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/r-3.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/r-4.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Built Resistance or Resistor value calculator.
+                    This application will help you to calculate resistance of resistor by resistor color code. However, this application only can calculate four or five lines resistors.<br>
+                    If your input is a valid sequence in both ways, it will calculate by top-to-bottom sequence.
+                    In this case, you should check standard resistor value table.<br>
+                    <div class="row">
+                      <div class="col-xs-12 text-right">
+                        <a href="https://play.google.com/store/apps/details?id=roh.programmer.rforresistance" target="_blank">See on Google Play Store</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="android">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">D for Debug</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Aug 2015
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Fun ways to familiar with debugging.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <img src="img/d-1.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/d-2.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/d-3.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/d-4.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Built hidden-object game to familiar with debugging.<br>
+                    Each code file is a game stage to play. Number of bugs and maximum playable time will be calculated based on the length of the code file.<br>
+                    The score will be calculated based on the number of found bugs and remain time.
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="arduino iot git">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Arduino WiFi</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Jul 2016
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Built a system to control electronic device by using Arduino.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <img src="img/arduino-wifi-diagram.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    This project was part of my team project which named "Home Remote Control".<br>
+                    Client Arduino will connect to Server Arduino and check the value regularly in the Server. This value is to turn on and off the connected electronic device.
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="raspberrypi python">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">RVD (Raspberry Voice Drop)</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Sep 2014
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Voice mail system using Dropbox API.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <img src="img/rvd-1.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Built voice mail system suing Dropbox API on Raspberry Pi.<br>
+                    Python script will check connected Dropbox folder regularly to see there is a new audio file exist or not. If it's exist, it will download and blink connected LED.<br>
+                    Downloaded audio file can be played by pushing button on Raspberry Pi.
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="html css js php mysql">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Korean Aggies</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    May 2014
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Built website with CMS(XpressEngine).
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    Developed new Korean Student Association website by using CMS(XpressEngine). Migrated old database into new website. Customized free web design for the website.
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div> <!-- End of resume-body-project -->
+
+        </div> <!-- End of resume-right -->
+
+      </div>
+    </div> <!-- End of resume-body -->
+
+    <div id="resume-footer">
+      <div class="row text-center">
+        Used Bootstrap, FontAwesome
+      </div>
     </div>
-    <div class="btn-group btn-group-social" role="group">
-        <a href="http://sjroh.github.io/resume.pdf" target="_blank" class="btn btn-default btn-social fa fa-file-text-o fa-lg" data-toggle="tooltip" data-placement="bottom" title="Resume"></a>
-        <a href="https://www.linkedin.com/in/sijineroh
-" target="_blank" class="btn btn-default btn-social fa fa-linkedin fa-lg" data-toggle="tooltip" data-placement="bottom" title="Linkedin"></a>
-        <a href="https://github.com/sjroh" target="_blank" class="btn btn-default btn-social fa fa-github fa-lg" data-toggle="tooltip" data-placement="bottom" title="Github"></a>
-    </div>
-</div>
 
-<div class="container-fluid part project" id="project">
-    <div class="container text-center">
-        <h1>Project</h1>
-    </div>
-    <div class="container list-project">
-        <div class="row"> <!--  Row  -->
-            <!--
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/semicolonholes-thumb.jpg" class="img-responsive" alt="Website for project team.">
-                <h4>Semicolon Holes</h4>
-                <div class="project-description">
-                    Website for project team.<br/>Used CodeIgniter Framework.
-                </div>
-                <div class="list-technology">
-                    <i class="icon-html5-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
-                    <i class="icon-css3-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
-                    <i class="icon-prog-js02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
-                    <i class="icon-prog-php02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="PHP"></i>
-                    <i class="icon-dbs-mysql fa-lg" data-toggle="tooltip" data-placement="bottom" title="MySQL"></i>
-                </div>
-            </div>
-            -->
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/goalachiever-thumb.jpg" class="img-responsive" alt="The application allows the users to focus on their work for a certain period of time and feel like they are playing a game. This application will use a lock/unlock screen detector to catch the motion of the user unlocking his/her smartphones.">
-                <h4>Goal Achiever</h4>
-                <div class="project-description">
-                    With DaeYoung Yoon<br/>
-                    The application allows the users to focus on their work for a certain period of time and feel like they are playing a game.
-                </div>
-                <div class="list-technology">
-                    <i class="icon-android fa-lg" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
-                    <a href="https://github.com/sjroh/GoalAchiever" target="_blank"><i class="fa fa-github fa-lg" data-toggle="tooltip" data-placement="bottom" title="Source code on Github"></i></a>
-                </div>
-            </div>
+  </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/laserharp-thumb.jpg" class="img-responsive" alt="Built harp with 15 lasers by using Arduino and Raspberry Pi">
-                <h4>Laser Harp</h4>
-                <div class="project-description">
-                    With Katherine Click, Sarah Sahibzada<br/>
-                    We built harp with 15 laser inputs with photo-resistor through Arduino. This harp was able to make MIDI output and audio output.
-                </div>
-                <div class="list-technology">
-                  <i class="icon-prog-c fa-lg" data-toggle="tooltip" data-placement="bottom" title="C"></i>
-                  <i class="icon-prog-python fa-lg" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
-                </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/rforresistance-thumb.png" class="img-responsive" alt="Resistance calculator. Published on Google Play Store.">
-                <h4>R for Resistance</h4>
-                <div class="project-description">
-                    Resistance Calculator based on color codes on the resistor.<br/>Published on Google Play Store.
-                </div>
-                <div class="list-technology">
-                    <i class="icon-android fa-lg" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
-                    <a href="https://play.google.com/store/apps/details?id=roh.programmer.rforresistance" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Check Google Play Store">
-                        <img src="img/google_play.png" alt="Click to see on Google Play Store">
-                    </a>
-                </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/dfordebug-thumb.png" class="img-responsive" alt="Hidden-Object Game in Android Application. Finished with prototype.">
-                <h4>D for Debug</h4>
-                <div class="project-description">
-                    Hidden-Object Game in Android Application.<br/>
-                    Finished with prototype.
-                </div>
-                <div class="list-technology">
-                    <i class="icon-android fa-lg" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/arduinowifi-thumb.png" class="img-responsive" alt="Part of my team project, Home Remote Control. Can turn on and off LED through WiFi.">
-                <h4>Arduino WiFi</h4>
-                <div class="project-description">
-                    Part of my team project, "Home Remote Control"<br/>Can turn on and off LED through WiFi.
-                </div>
-                <div class="list-technology">
-                    <i class="icon-prog-c fa-lg" data-toggle="tooltip" data-placement="bottom" title="C"></i>
-                    <i class="fa fa-wifi fa-lg" data-toggle="tooltip" data-placement="bottom" title="WiFi"></i>
-                    <a href="https://github.com/sjroh/ArduinoWifi" target="_blank"><i class="fa fa-github fa-lg" data-toggle="tooltip" data-placement="bottom" title="Source code on Github"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/raspberrydropvoice-thumb.jpg" class="img-responsive" alt="Voice mail system using Dropbox API and Python on Raspberrry Pi.">
-                <h4>RVD (Raspberry Voice Drop)</h4>
-                <div class="project-description">
-                    Voice mail system using Dropbox API and Python on Raspberrry Pi.
-                </div>
-                <div class="list-technology">
-                    <i class="icon-prog-python fa-lg" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
-                    <i class="icon-dropbox fa-lg" data-toggle="tooltip" data-placement="bottom" title="Dropbox API"></i>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 item-project">
-                <img src="./project/koreanaggies-thumb.png" class="img-responsive" alt="Korean Student Association Texasa A&amp;M University website. Needed to use CMS(XE) to migrate user database.">
-                <h4>Korean Aggies</h4>
-                <div class="project-description">
-                    Korean Student Association Texasa A&amp;M University website. Needed to use CMS(XE) to migrate user database.
-                </div>
-                <div class="list-technology">
-                    <i class="icon-html5-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
-                    <i class="icon-css3-01 fa-lg" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
-                    <i class="icon-prog-js02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
-                    <i class="icon-prog-php02 fa-lg" data-toggle="tooltip" data-placement="bottom" title="PHP"></i>
-                    <i class="icon-dbs-mysql fa-lg" data-toggle="tooltip" data-placement="bottom" title="MySQL"></i>
-                </div>
-            </div>
-
-        </div> <!--  Row Ends -->
-    </div>
-</div>
-
-<div class="container-fluid part" id="contact">
-    <h2 class="featurette-heading text-center">Contact</span></h2>
-    <p class="lead text-center">
-        sijine.roh@gmail.com
-    </p>
-</div>
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/main.js"></script>
 
 </body>
 </html>
