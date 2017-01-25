@@ -64,7 +64,6 @@
     <div id="resume-body">
       <div class="row">
 
-
         <div id="resume-body-left" class="col-xs-4 resume-body-item">
 
           <!-- Education -->
@@ -109,23 +108,23 @@
           <div id="resume-body-skill" class="col-xs-12">
             <h2 class="section-title">Skill</h2>
             <ul id="list-skill" class="list-inline">
-              <li class="active" value="all">ALL</li>
-              <li value="ccpp">C/C++</li>
-              <li value="java">Java</li>
-              <li value="python">Python</li>
-              <li value="php">PHP</li>
-              <li value="html">HTML</li>
-              <li value="css">CSS</li>
-              <li value="javascript">JavaScript</li>
-              <li value="ruby">Ruby</li>
-              <li value="rails">Rails</li>
-              <li value="android">Android</li>
-              <li value="mysql">MySQL</li>
-              <li value="mongodb">MongoDB</li>
-              <li value="arduino">Arduino</li>
-              <li value="raspberrypi">Raspberry Pi</li>
-              <li value="iot">IoT</li>
-              <li value="git">Git</li>
+              <li class="item-skill active" value="all">ALL</li>
+              <li class="item-skill" value="ccpp">C/C++</li>
+              <li class="item-skill" value="java">Java</li>
+              <li class="item-skill" value="python">Python</li>
+              <li class="item-skill" value="php">PHP</li>
+              <li class="item-skill" value="html">HTML</li>
+              <li class="item-skill" value="css">CSS</li>
+              <li class="item-skill" value="js">JavaScript</li>
+              <li class="item-skill" value="ruby">Ruby</li>
+              <li class="item-skill" value="rails">Rails</li>
+              <li class="item-skill" value="android">Android</li>
+              <li class="item-skill" value="mysql">MySQL</li>
+              <li class="item-skill" value="mongodb">MongoDB</li>
+              <li class="item-skill" value="arduino">Arduino</li>
+              <li class="item-skill" value="raspberrypi">Raspberry Pi</li>
+              <li class="item-skill" value="iot">IoT</li>
+              <li class="item-skill" value="git">Git</li>
             </ul>
           </div>
 
@@ -233,7 +232,7 @@
                 </ul>
               </li>
 
-              <li class="item-experience" skill="html css javascript java">
+              <li class="item-experience" skill="html css js java">
                 <div class="row experience-title">
                   <div class="col-xs-8">
                     <h4 class="section-sub-title">Undergraduate Research</h4>
@@ -277,7 +276,7 @@
                 </ul>
               </li>
 
-              <li class="item-experience" skill="html css javascript php mysql">
+              <li class="item-experience" skill="html css js php mysql">
                 <div class="row experience-title">
                   <div class="col-xs-8">
                     <h4 class="section-sub-title">Web Developer & Administrator</h4>
@@ -296,7 +295,7 @@
                 </ul>
               </li>
 
-              <li class="item-experience" skill="ruby rails html css javascript android mysql mongodb git">
+              <li class="item-experience" skill="ruby rails html css js android mysql mongodb git">
                 <div class="row experience-title">
                   <div class="col-xs-8">
                     <h4 class="section-sub-title">Web & Android Developer</h4>
@@ -383,15 +382,48 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-xs-12 project-summary">
+                  <div class="col-xs-10 project-summary">
                     Automated sprikler system based on weather forecast.
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
                   </div>
                   <div class="col-xs-12 project-detail">
                     Team project with Kyle Wahl & Abigail Rodriguez.<br>
+                    Wrote Python script running on Raspberry Pi.<br>
+                    The python script gather weather forecast information by using weather forecast API, schedule watering schedule on the database in Raspberry Pi, and run relay motors to flow the water based on the schedule.
                   </div>
-                  <div class="col-xs-12 text-right">
+                </div>
+              </li>
+
+              <li class="item-project" skill="python raspberrypi arduino ccpp">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Laser Harp</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Fall 2015
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Built MIDI compatible Laser Harp.
+                  </div>
+                  <div class="col-xs-2 text-right">
                     <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
                     <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <img src="img/laser-harp.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Team project with Katherine Click & Sarah Sahibzada.<br>
+                    Built python script to generate analog audio output from Raspberry Pi based on the input from connected Arduino.<br>
+                    Built C code to generate MIDI output through MIDI shield on Arduino based on the input from connected lasers.<br>
+                    The harp has 15 laser inputs with photo-resistors through Arduino. Arduino is connected with Raspberry Pi to generate analog audio output. This harp was able to make MIDI output and analog audio output.
                   </div>
                 </div>
               </li>
@@ -402,21 +434,35 @@
                     <h4 class="section-sub-title">Goal Achiever</h4>
                   </div>
                   <div class="col-xs-4 text-right project-period">
-                    Spring 2016
+                    Fall 2015
                   </div>
                 </div>
-                <div class="row project-summary">
-                  <div class="col-xs-12">
-                    With DaeYoung Yoon<br>
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
                     Android application to make a productive time.
                   </div>
-                  <div class="col-xs-12">
-                    [IMAGES]<br>
-                    This application allows the users to focus on their work for a certain period of time and feel like they are playing a game.<br>
-                    This application contains an alarm clock which counts unlock event by the user. Based on the unlocking event counter, the user can able to obtain reward points. The user is able to get more reward points, if they focused on their work longer and use their smartphone less. The user is able to obtain a piece of random gift card by spending their reward points.
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-xs-12 text-right">
-                    <a href="">Less detail <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></a>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <img src="img/goal-1.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/goal-2.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/goal-3.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/goal-4.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Team project With DaeYoung Yoon (Designer).<br>
+                    Built an Android application allows the users to focus on their work for a certain period of time and feel like they are playing a game.<br>
+                    This application contains an alarm clock which counts unlock event by the user. Based on the unlocking event counter, the user can able to obtain reward points. The user is able to get more reward points, if they focused on their work longer and use their smartphone less. The user is able to obtain a piece of random gift card by spending their reward points.
                   </div>
                 </div>
               </li>
@@ -430,12 +476,38 @@
                     Aug 2015
                   </div>
                 </div>
-                <div class="row project-summary">
-                  <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
                     Android application to calculate resistance.
                   </div>
-                  <div class="col-xs-12 text-right">
-                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <img src="img/r-1.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/r-2.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/r-3.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/r-4.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Built Resistance or Resistor value calculator.
+                    This application will help you to calculate resistance of resistor by resistor color code. However, this application only can calculate four or five lines resistors.<br>
+                    If your input is a valid sequence in both ways, it will calculate by top-to-bottom sequence.
+                    In this case, you should check standard resistor value table.<br>
+                    <div class="row">
+                      <div class="col-xs-12 text-right">
+                        <a href="https://play.google.com/store/apps/details?id=roh.programmer.rforresistance" target="_blank">See on Google Play Store</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -449,12 +521,32 @@
                     Aug 2015
                   </div>
                 </div>
-                <div class="row project-summary">
-                  <div class="col-xs-12">
-                    Hidden-Object Android game.
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Fun ways to familiar with debugging.
                   </div>
-                  <div class="col-xs-12 text-right">
-                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <img src="img/d-1.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/d-2.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/d-3.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-3">
+                        <img src="img/d-4.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Built hidden-object game to familiar with debugging.<br>
+                    Each code file is a game stage to play. Number of bugs and maximum playable time will be calculated based on the length of the code file.<br>
+                    The score will be calculated based on the number of found bugs and remain time.
                   </div>
                 </div>
               </li>
@@ -468,12 +560,22 @@
                     Jul 2016
                   </div>
                 </div>
-                <div class="row project-summary">
-                  <div class="col-xs-12">
-                    Part of "Home Remote Control" project.
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Built a system to control electronic device by using Arduino.
                   </div>
-                  <div class="col-xs-12 text-right">
-                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <img src="img/arduino-wifi-diagram.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    This project was part of my team project which named "Home Remote Control".<br>
+                    Client Arduino will connect to Server Arduino and check the value regularly in the Server. This value is to turn on and off the connected electronic device.
                   </div>
                 </div>
               </li>
@@ -487,17 +589,28 @@
                     Sep 2014
                   </div>
                 </div>
-                <div class="row project-summary">
-                  <div class="col-xs-12">
-                    Voice mail system using Dropbox.
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Voice mail system using Dropbox API.
                   </div>
-                  <div class="col-xs-12 text-right">
-                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <img src="img/rvd-1.png" class="img-rounded img-responsive">
+                      </div>
+                    </div>
+                    Built voice mail system suing Dropbox API on Raspberry Pi.<br>
+                    Python script will check connected Dropbox folder regularly to see there is a new audio file exist or not. If it's exist, it will download and blink connected LED.<br>
+                    Downloaded audio file can be played by pushing button on Raspberry Pi.
                   </div>
                 </div>
               </li>
 
-              <li class="item-project" skill="html css javascript php mysql">
+              <li class="item-project" skill="html css js php mysql">
                 <div class="row project-title">
                   <div class="col-xs-8">
                     <h4 class="section-sub-title">Korean Aggies</h4>
@@ -506,12 +619,16 @@
                     May 2014
                   </div>
                 </div>
-                <div class="row project-summary">
-                  <div class="col-xs-12">
-                    Website of Korean Student Association in Texas A&M University.
+                <div class="row">
+                  <div class="col-xs-10 project-summary">
+                    Built website with CMS(XpressEngine).
                   </div>
-                  <div class="col-xs-12 text-right">
-                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  <div class="col-xs-2 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    Developed new Korean Student Association website by using CMS(XpressEngine). Migrated old database into new website. Customized free web design for the website.
                   </div>
                 </div>
               </li>

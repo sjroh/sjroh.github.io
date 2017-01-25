@@ -75,15 +75,18 @@ a:hover {
   margin-top: 10px;
 }
 
-/*.project-detail {
+.project-detail {
   display: none;
 }
 .detail-hide {
   display: none;
-}*/
+}
 
 .detail-show, .detail-hide {
   cursor: pointer;
+}
+.detail-show:hover, .detail-hide:hover {
+  color: #AAAAAA;
 }
 
 #resume-footer {
