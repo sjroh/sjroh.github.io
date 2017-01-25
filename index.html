@@ -9,6 +9,7 @@
   <meta name="author" content="Si Jine Roh">
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -16,7 +17,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
 
   <title>SI JINE ROH</title>
 </head>
@@ -26,21 +27,35 @@
     <div id="resume-header">
       <div id="personal-information" class="row">
         <div id="personal-information-name" class="col-xs-8">
-          <h1><strong>SI JINE ROH</strong></h1>
+          <h1>SI JINE ROH</h1>
         </div>
         <div id="personal-information-contact" class="col-xs-4">
           <address class="text-right">
-            <a href="mailto:sijine.roh@gmail.com">
-              <strong>sijine.roh@gmail.com</strong>
+            <a href="mailto:sijine.roh@gmail.com" class="personal-information-link">
+              sijine.roh@gmail.com
+              &nbsp;
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
             </a>
-            &nbsp;
-            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
             <br>
-            <a href="tel:+19796765515">
-              <strong>+1 (979) 676-5515</strong>
+            <a href="tel:+19796765515" class="personal-information-link">
+              +1 (979) 676-5515
+              &nbsp;
+              <i class="fa fa-phone" aria-hidden="true"></i>
             </a>
-            &nbsp;
-            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+
+            <br>
+            <a href="https://github.com/sjroh?utf8=%E2%9C%93&tab=repositories&q=&type=source" target="_blank" class="personal-information-link">
+              github.com/sjroh
+              &nbsp;
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+
+            <br>
+            <a href="https://www.linkedin.com/in/sijineroh" target="_blank" class="personal-information-link">
+              linkedin.com/in/sijineroh
+              &nbsp;
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
           </address>
         </div>
       </div> <!-- End of personal-information -->
@@ -54,25 +69,46 @@
 
           <!-- Education -->
           <div id="resume-body-education" class="col-xs-12">
-            <h2><strong>Education</strong></h2>
-            <h4>Texas A&M University</h4>
-            <p class="text-right">
-              College Station, Texas<br>
-              B.S. in Computer Engineering<br>
-              Graduated with Cum Laude (May 2016)
-            </p>
-            <h4>University of Arizona</h4>
-            <p class="text-right">
-              Tucson, Arizona<br>
-              B.S. in Computer Engineering<br>
-              Transferred to Texas A&M University
-            </p>
+            <h2 class="section-title">Education</h2>
+            <ul id="list-education" class="list-unstyled">
+              <li class="item-education">
+                <div class="row education-title">
+                  <div class="col-xs-12">
+                    <h4 class="section-sub-title">Texas A&M University</h4>
+                  </div>
+                </div>
+                <div class="row education-description">
+                  <div class="col-xs-12">
+                    <p class="text-right">
+                      College Station, Texas<br>
+                      B.S. in Computer Engineering<br>
+                      Graduated with Cum Laude (May 2016)
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="item-education">
+                <div class="row education-title">
+                  <div class="col-xs-12">
+                    <h4 class="section-sub-title">University of Arizona</h4>
+                  </div>
+                </div>
+                <div class="row education-description">
+                  <div class="col-xs-12">
+                    <p class="text-right">
+                      Tucson, Arizona<br>
+                      B.S. in Computer Engineering<br>
+                      Transferred to Texas A&M University
+                    </p>
+                  </div>
+                </div>
+              </li>
           </div>
 
           <!-- Skill -->
           <div id="resume-body-skill" class="col-xs-12">
-            <h2><strong>Skill</strong></h2>
-            <ul id="list-skill">
+            <h2 class="section-title">Skill</h2>
+            <ul id="list-skill" class="list-inline">
               <li class="active" value="all">ALL</li>
               <li value="ccpp">C/C++</li>
               <li value="java">Java</li>
@@ -87,58 +123,80 @@
               <li value="mysql">MySQL</li>
               <li value="mongodb">MongoDB</li>
               <li value="arduino">Arduino</li>
+              <li value="raspberrypi">Raspberry Pi</li>
+              <li value="iot">IoT</li>
               <li value="git">Git</li>
             </ul>
           </div>
 
           <!-- Activity -->
           <div id="resume-body-activity" class="col-xs-12">
-            <h2><strong>Activity</strong></h2>
-            <h4>UPE</h4>
-            <p class="text-right">
-              Member of International Honor Society for the Computing & Information
-            </p>
-            <h4>CodeRED</h4>
-            <p class="text-right">
-              University of Houston, Texas<br>
-              Nov 2015
-            </p>
-            <h4>TAMUHACK</h4>
-            <p class="text-right">
-              Texas A&M University, Texas<br>
-              Oct 2015
-            </p>
-            <h4>Anadarko Show and Tell</h4>
-            <p class="text-right">
-              Presenter<br>
-              Sep 2015
-            </p>
-            <h4>Microsoft Korea Workshop</h4>
-            <p class="text-right">
-              Microsoft Azure, Windows 8 application development<br>
-              Mar 2013
-            </p>
-            <h4>ITU IT Volunteer</h4>
-            <p class="text-right">
-              Teach basic computer skills to local students
-              Nangi Village, Nepal<br>
-              Jul 2012
-            </p>
+            <h2 class="section-title">Activity</h2>
+            <ul id="list-activity" class="list-unstyled">
+              <li class="item-activity">
+                <h4 class="section-sub-title">UPE</h4>
+                <p class="text-right">
+                  Member of International Honor Society for the Computing & Information
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">CodeRED</h4>
+                <p class="text-right">
+                  University of Houston, Texas<br>
+                  Nov 2015
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">TAMUHACK</h4>
+                <p class="text-right">
+                  Texas A&M University, Texas<br>
+                  Oct 2015
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">Anadarko Show and Tell</h4>
+                <p class="text-right">
+                  Presenter<br>
+                  Sep 2015
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">Microsoft Korea Workshop</h4>
+                <p class="text-right">
+                  Microsoft Azure, Windows 8 application development<br>
+                  Mar 2013
+                </p>
+              </li>
+              <li class="item-activity">
+                <h4 class="section-sub-title">ITU IT Volunteer</h4>
+                <p class="text-right">
+                  Teach basic computer skills to local students
+                  Nangi Village, Nepal<br>
+                  Jul 2012
+                </p>
+              </li>
+            </ul>
           </div>
 
           <!-- Award -->
           <div id="resume-body-award" class="col-xs-12">
-            <h2><strong>Award</strong></h2>
-            <h4>Dean’s Honor Award</h4>
-            <p class="text-right">
-              The Dwight Look College of Engineering<br>
-              Spring 2015
-            </p>
-            <h4>Certificate of Appreciation</h4>
-            <p class="text-right">
-              Texas A&M University<br>
-              Spring 2016
-            </p>
+            <h2 class="section-title">Award</h2>
+            <ul id="list-award" class="list-unstyled">
+              <li class="item-award">
+                <h4 class="section-sub-title">Dean’s Honor Award</h4>
+                <p class="text-right">
+                  The Dwight Look College of Engineering<br>
+                  Spring 2015
+                </p>
+              </li>
+              <li class="item-award">
+                <h4 class="section-sub-title">Certificate of Appreciation</h4>
+                <p class="text-right">
+                  Department of Computer Science & Engineering, Texas A&M University<br>
+                  Spring 2016
+                </p>
+              </li>
+            </ul>
           </div>
 
         </div> <!-- End of resume-body-left -->
@@ -149,39 +207,43 @@
 
           <!-- Experience -->
           <div id="resume-body-experience" class="col-xs-12">
-            <h2><strong>Experience</strong></h2>
-            <ul id="list-experience">
-              <li class="item-experience">
+            <h2 class="section-title">Experience</h2>
+            <ul id="list-experience" class="list-unstyled">
+
+              <li class="item-experience" skill="ccpp git">
                 <div class="row experience-title">
                   <div class="col-xs-8">
-                    <h4><strong>Research Assistant II</strong></h4>
+                    <h4 class="section-sub-title">Research Assistant II</h4>
                   </div>
                   <div class="col-xs-4 text-right experience-period">
                     June 2016 - Present
                   </div>
                 </div>
                 <div>
-                  <strong>Department of Neurosurgery</strong>, University of Texas Health Science Center at Houston
+                  Department of Neurosurgery, University of Texas Health Science Center at Houston
                 </div>
 
                 <ul>
                   <li>
                     Robotic surgery research lab in Department of Neurosurgery
                   </li>
+                  <li>
+                    Developed motor control testing program
+                  </li>
                 </ul>
               </li>
 
-              <li class="item-experience">
+              <li class="item-experience" skill="html css javascript java">
                 <div class="row experience-title">
                   <div class="col-xs-8">
-                    <h4><strong>Undergraduate Research</strong></h4>
+                    <h4 class="section-sub-title">Undergraduate Research</h4>
                   </div>
                   <div class="col-xs-4 text-right experience-period">
                     Jan 2016 - May 2016
                   </div>
                 </div>
                 <div>
-                  <strong>Department of Computer Science & Engineering</strong>, Texas A&M University
+                  Department of Computer Science & Engineering, Texas A&M University
                 </div>
                 <ul>
                   <li>
@@ -190,17 +252,17 @@
                 </ul>
               </li>
 
-              <li class="item-experience">
+              <li class="item-experience" skill="python ccpp">
                 <div class="row experience-title">
                   <div class="col-xs-8">
-                    <h4><strong>Peer Teacher</strong></h4>
+                    <h4 class="section-sub-title">Peer Teacher</h4>
                   </div>
                   <div class="col-xs-4 text-right experience-period">
                     Sep 2015 - May 2016
                   </div>
                 </div>
                 <div>
-                  <strong>Department of Computer Science & Engineering</strong>, Texas A&M University
+                  Department of Computer Science & Engineering, Texas A&M University
                 </div>
                 <ul>
                   <li>
@@ -215,17 +277,17 @@
                 </ul>
               </li>
 
-              <li class="item-experience">
+              <li class="item-experience" skill="html css javascript php mysql">
                 <div class="row experience-title">
                   <div class="col-xs-8">
-                    <h4><strong>Web Developer & Administrator</strong></h4>
+                    <h4 class="section-sub-title">Web Developer & Administrator</h4>
                   </div>
                   <div class="col-xs-4 text-right experience-period">
                     May 2014 - May 2016
                   </div>
                 </div>
                 <div>
-                  <strong>Korean Students Association</strong>, Texas A&M University
+                  Korean Students Association, Texas A&M University
                 </div>
                 <ul>
                   <li>
@@ -234,17 +296,17 @@
                 </ul>
               </li>
 
-              <li class="item-experience">
+              <li class="item-experience" skill="ruby rails html css javascript android mysql mongodb git">
                 <div class="row experience-title">
                   <div class="col-xs-8">
-                    <h4><strong>Web & Android Developer</strong></h4>
+                    <h4 class="section-sub-title">Web & Android Developer</h4>
                   </div>
                   <div class="col-xs-4 text-right experience-period">
                     Aug 2012 - Apr 2013
                   </div>
                 </div>
                 <div>
-                  <strong>O’square Co., Ltd.</strong>, Seoul, South Korea
+                  O’square Co., Ltd., Seoul, South Korea
                 </div>
                 <ul>
                   <li>
@@ -259,14 +321,39 @@
               <li class="item-experience">
                 <div class="row experience-title">
                   <div class="col-xs-8">
-                    <h4><strong>Sergeant</strong></h4>
+                    <h4 class="section-sub-title">Technical Assistant</h4>
+                  </div>
+                  <div class="col-xs-4 text-right experience-period">
+                    Feb 2012 - Jun 2012
+                  </div>
+                </div>
+                <div>
+                  Sunrin Internet High School, Seoul, Republic of Korea
+                </div>
+                <ul>
+                  <li>
+                    Providing technical assistance to fault, staff, and student in person
+                  </li>
+                  <li>
+                    Supporting 200 users and 300 computers on both software and hardware sides
+                  </li>
+                  <li>
+                    Managing school network and equipments
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item-experience">
+                <div class="row experience-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Sergeant</h4>
                   </div>
                   <div class="col-xs-4 text-right experience-period">
                     May 2010 - Feb 2012
                   </div>
                 </div>
                 <div>
-                  <strong>Artillery School</strong>, Republic of Korea Army, South Korea
+                  Artillery School, Republic of Korea Army, South Korea
                 </div>
                 <ul>
                   <li>
@@ -274,6 +361,7 @@
                   </li>
                 </ul>
               </li>
+
             </ul>
 
 
@@ -281,18 +369,164 @@
 
           <!-- Project -->
           <div id="resume-body-project" class="col-xs-12">
-            <h2><strong>Project</strong></h2>
-          </div>
+            <h2 class="section-title">Project</h2>
 
-        </div>
+            <ul id="list-project" class="list-unstyled">
 
+              <li class="item-project" skill="python raspberrypi iot mongodb">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">My Sprikler</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Spring 2016
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 project-summary">
+                    Automated sprikler system based on weather forecast.
+                  </div>
+                  <div class="col-xs-12 project-detail">
+                    Team project with Kyle Wahl & Abigail Rodriguez.<br>
+                  </div>
+                  <div class="col-xs-12 text-right">
+                    <span class="detail-show">More <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span>
+                    <span class="detail-hide">Hide <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="android git">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Goal Achiever</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Spring 2016
+                  </div>
+                </div>
+                <div class="row project-summary">
+                  <div class="col-xs-12">
+                    With DaeYoung Yoon<br>
+                    Android application to make a productive time.
+                  </div>
+                  <div class="col-xs-12">
+                    [IMAGES]<br>
+                    This application allows the users to focus on their work for a certain period of time and feel like they are playing a game.<br>
+                    This application contains an alarm clock which counts unlock event by the user. Based on the unlocking event counter, the user can able to obtain reward points. The user is able to get more reward points, if they focused on their work longer and use their smartphone less. The user is able to obtain a piece of random gift card by spending their reward points.
+                  </div>
+                  <div class="col-xs-12 text-right">
+                    <a href="">Less detail <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="android">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">R for Resistance</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Aug 2015
+                  </div>
+                </div>
+                <div class="row project-summary">
+                  <div class="col-xs-12">
+                    Android application to calculate resistance.
+                  </div>
+                  <div class="col-xs-12 text-right">
+                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="android">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">D for Debug</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Aug 2015
+                  </div>
+                </div>
+                <div class="row project-summary">
+                  <div class="col-xs-12">
+                    Hidden-Object Android game.
+                  </div>
+                  <div class="col-xs-12 text-right">
+                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="arduino iot git">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Arduino WiFi</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Jul 2016
+                  </div>
+                </div>
+                <div class="row project-summary">
+                  <div class="col-xs-12">
+                    Part of "Home Remote Control" project.
+                  </div>
+                  <div class="col-xs-12 text-right">
+                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="raspberrypi python">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">RVD (Raspberry Voice Drop)</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    Sep 2014
+                  </div>
+                </div>
+                <div class="row project-summary">
+                  <div class="col-xs-12">
+                    Voice mail system using Dropbox.
+                  </div>
+                  <div class="col-xs-12 text-right">
+                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-project" skill="html css javascript php mysql">
+                <div class="row project-title">
+                  <div class="col-xs-8">
+                    <h4 class="section-sub-title">Korean Aggies</h4>
+                  </div>
+                  <div class="col-xs-4 text-right project-period">
+                    May 2014
+                  </div>
+                </div>
+                <div class="row project-summary">
+                  <div class="col-xs-12">
+                    Website of Korean Student Association in Texas A&M University.
+                  </div>
+                  <div class="col-xs-12 text-right">
+                    <a href="">More detail <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div> <!-- End of resume-body-project -->
+
+        </div> <!-- End of resume-right -->
 
       </div>
     </div> <!-- End of resume-body -->
 
     <div id="resume-footer">
       <div class="row text-center">
-        used Bootstrap
+        Used Bootstrap, FontAwesome
       </div>
     </div>
 

@@ -1,26 +1,10 @@
-/*body {padding-top: 50px; padding-bottom: 25px;}
-a {color: black;}
-
-.part {padding-top: 50px; padding-bottom: 70px;}
-.btn-group-social {margin-top: 15px;}
-.btn-social {padding: 12px;}
-
-.project {background: #EEEEEE}
-.list-project {margin-top: 10px;}
-.item-project {margin: 10px 0;}
-.item-project img {background-color: #FFFFFF;}
-.list-technology {margin-right: 10px; margin-bottom: 10px; font-size: 20px; float:right; height: 36px; max-height:36px;}
-.list-technology img {height: 28px;}
-.project-description {height: 100px; }*/
-
 body {
-  /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Raleway', sans-serif;
   color: #000000;
   background-color: #AAAAAA;
 }
 
-a:link {
+a, a:link {
   text-decoration: none !important;
   color: #000000;
 }
@@ -42,12 +26,13 @@ a:hover {
   margin: 0;
   padding: 0;
 }
-#personal-information-contact {
+
+#personal-information {
   margin-top: 10px;
 }
-
-#resume-footer {
-  margin: 15px;
+#personal-information-name h1 {
+  font-weight: bold;
+  font-size: 4em;
 }
 
 #resume-body-skill, #resume-body-education, #resume-body-award, #resume-body-experience, #resume-body-project, #resume-body-activity {
@@ -55,12 +40,11 @@ a:hover {
   padding: 0;
 }
 
-
-#list-skill, #list-experience {
+/*#list-skill, #list-experience, #list-project, #list-education {
   list-style: none;
   margin:0;
   padding: 0;
-}
+}*/
 
 #list-skill li {
   float: left;
@@ -77,9 +61,31 @@ a:hover {
   border: 1px solid #000000;
 }
 
-.item-experience {
-  margin-bottom: 20px;
+.section-title {
+  text-decoration: underline;
 }
-.experience-period {
+.section-sub-title {
+  font-weight: bold;
+}
+
+.item-experience, .item-project {
+  margin-bottom: 10px;
+}
+.experience-period, .project-period {
   margin-top: 10px;
+}
+
+/*.project-detail {
+  display: none;
+}
+.detail-hide {
+  display: none;
+}*/
+
+.detail-show, .detail-hide {
+  cursor: pointer;
+}
+
+#resume-footer {
+  margin: 15px;
 }
