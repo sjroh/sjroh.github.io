@@ -1,0 +1,73 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  /*background-color: #AAAAAA;*/
+}
+
+#resume {
+  background-color: #FFFFFF;
+  min-width: 750px;
+}
+
+#resume-header, #resume-body {
+  margin: 0;
+  padding: 0;
+}
+
+#personal-information {
+  margin-top: 10px;
+}
+#personal-information-name h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#resume-body-skill, #resume-body-education, #resume-body-award, #resume-body-experience, #resume-body-project, #resume-body-activity {
+  margin: 0;
+  padding: 0;
+}
+
+/*#list-skill, #list-experience, #list-project, #list-education {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}*/
+
+#list-skill li {
+  float: left;
+  color: #000000;
+  margin: 3px;
+}
+
+.section-title {
+  text-decoration: underline;
+}
+.section-sub-title {
+  font-weight: bold;
+}
+
+.item-experience, .item-project {
+  margin-bottom: 10px;
+}
+.experience-period, .project-period {
+  margin-top: 10px;
+}
+
+.project-detail {
+  display: none;
+}
+.detail-show, .detail-hide {
+  display: none;
+}
+
+.detail-show, .detail-hide {
+  cursor: pointer;
+}
+.detail-show:hover, .detail-hide:hover {
+  color: #AAAAAA;
+}
+
+#resume-footer {
+  display: none;
+  margin: 15px;
+}
