@@ -47,7 +47,8 @@ body {
 }
 
 .item-experience, .item-project {
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .experience-period, .project-period {
   margin-top: 10px;
