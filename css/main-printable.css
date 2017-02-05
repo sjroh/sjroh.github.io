@@ -1,7 +1,12 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #000000;
-  /*background-color: #AAAAAA;*/
+}
+
+@media print {
+  a[href]:after {
+    content:"" !important;
+  }
 }
 
 #resume {
@@ -21,22 +26,23 @@ body {
   font-weight: bold;
   font-size: 4em;
 }
+#personal-information-link-resume {
+  display: none;
+}
 
 #resume-body-skill, #resume-body-education, #resume-body-award, #resume-body-experience, #resume-body-project, #resume-body-activity {
   margin: 0;
   padding: 0;
 }
 
-/*#list-skill, #list-experience, #list-project, #list-education {
-  list-style: none;
-  margin:0;
-  padding: 0;
-}*/
-
 #list-skill li {
   float: left;
   color: #000000;
   margin: 3px;
+}
+
+#list-skill-all {
+  display: none;
 }
 
 .section-title {
