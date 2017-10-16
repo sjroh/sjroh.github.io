@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mapline</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mapline.css" />
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/mapline.js"></script>
+
+  <!-- Google Map -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACS1AqERzw28Cepu2cDqJ0BUGydTGYL90&sensor=false&callback=initMapline" async defer></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMapline" async defer></script>
+
+</head>
+
+<body>
+  <div id="mapline">
+    <div id="map">
+    </div>
+    <!-- Future Feature -->
+    <div id="timeline" class="container">
+      <!-- <div class="row">
+          <div class="col-sm-12">
+            timeline
+          </div>
+        </div> -->
+      <div id="mapline-file-menu" class="row">
+        <div class="col-xs-12">
+          <input type="file" id="load-file" name="load-file" hidden style="display:none">
+          <button type="button" class="btn btn-xs btn-info" onclick="openImportFile();">Import json file</button>
+          <button type="button" class="btn btn-xs btn-primary" onclick="exportFile()">Export as json file</button>
+          <a id="download-anchor" style="display:none"></a>
+        </div>
+      </div>
+      <div id="mapline-list-menu" class="row text-center">
+        <div id="mapline-list-menu-show" class="col-sm-12">
+          Show Mapline List&nbsp;<i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+        </div>
+        <div id="mapline-list-menu-hide" class="col-sm-12">
+          Hide Mapline List&nbsp;<i class="fa fa-caret-square-o-up" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-sm-12">
+          <ol id="mapline-list">
+            <li>asdf</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input Modal -->
+  <div class="modal fade" id="modal-create-marker" tabindex="-1" role="dialog" aria-labelledby="modal-create-marker-label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modal-create-marker-label">Create Marker</h4>
+        </div>
+
+        <div class="modal-body" id="modal-create-marker-body">
+
+          <form id="form-marker-date" class="form-horizontal" method="post">
+
+            <div id="form-marker-from-date" class="form-group row">
+              <label for="marker-from-date" class="col-sm-3 control-label">from Date</label>
+              <div class="col-sm-9">
+                <input type="text" id="from-date" for="marker-from-date" placeholder="mm/dd/yyyy">
+              </div>
+            </div>
+
+            <div id="form-marker-to-date" class="form-group row">
+              <label for="marker-to-date" class="col-sm-3 control-label">to Date</label>
+              <div class="col-sm-9">
+                <input type="text" id="to-date" for="marker-to-date" placeholder="mm/dd/yyyy">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="marker-memo" class="col-sm-3 control-label">Memo</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="marker-memo" placeholder="Optional">
+              </div>
+            </div>
+
+            <div class="form-group row text-right">
+              <div class="col-sm-12">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="createMarker()">Create</button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Create</button>
+          </div> -->
+
+      </div>
+    </div>
+  </div>
+  <!-- <div class="modal-backdrop fade in"></div> -->
+</body>
+
+</html>
