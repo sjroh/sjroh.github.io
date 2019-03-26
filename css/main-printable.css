@@ -1,7 +1,8 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #000000;
-  margin-left: 50px;
+  margin-left: 30px;
+  background-color: #ffffff;
 }
 
 @media print {
@@ -12,7 +13,7 @@ body {
 
 #resume {
   background-color: #FFFFFF;
-  min-width: 750px;
+  /* min-width: 750px; */
 }
 
 #resume-header, #resume-body {
@@ -36,6 +37,10 @@ body {
   padding: 0;
 }
 
+#resume-body-skill {
+  margin-top: -20px;
+}
+
 #list-skill li {
   float: left;
   color: #000000;
@@ -53,10 +58,6 @@ body {
   font-weight: bold;
 }
 
-.item-experience, .item-project {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .experience-period, .project-period {
   margin-top: 10px;
 }
@@ -77,10 +78,9 @@ body {
 
 #resume-footer {
   display: none;
-  margin: 15px;
 }
 
-.item-activity, .item-project, .item-experience {
+.item-education, .item-activity, .item-project, .item-experience {
   margin-top: 0;
   margin-bottom: 0;
 }
