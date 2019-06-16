@@ -5,6 +5,6 @@ date:   2019-06-01 00:00:00 -0500
 categories: update newthing
 ---
 
-I installed Jekyll.
+Jekyll has been installed!
 
 Let me working on something fun again!

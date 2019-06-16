@@ -6,10 +6,10 @@ permalink: /about/
 
 Si Jine Roh
 
-Born and raised in Korea.
+Born and raised in Korea
 
-Aggies, Texas A&M University, Class of 2016.
+Aggies, Texas A&M University, Class of 2016
 
-Working as a Software Engineer.
+Working as a Software Engineer
 
-[Resume](/_asset/Resume.pdf)
+[Resume](/Resume.pdf)
