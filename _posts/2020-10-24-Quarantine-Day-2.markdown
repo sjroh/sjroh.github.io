@@ -12,6 +12,7 @@ The weather was great today to take a walk on the beach. There was no scary wave
 
 I found a pattern of my meals. Each meal includes the below items.
 - Breakfast
+    - Rice soup
     - Hard-boiled egg
     - Bread
 - Lunch
