@@ -2,7 +2,8 @@
 layout: post
 title: "Quarantine Day 0"
 date: 2020-10-22 19:00:00 +0800
-categories: travel quarantine korea china
+categories: daily_life
+tags: travel quarantine korea china
 ---
 Landed on Qingdao in the morning. 
 

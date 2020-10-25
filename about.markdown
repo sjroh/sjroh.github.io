@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Si Jine Roh
+# Si Jine Roh
 
-Software Engineer
+Software Engineer (Back-End) @Schlumberger
 
 Texas A&M University, Class of 2016
 

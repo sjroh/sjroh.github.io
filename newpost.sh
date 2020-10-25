@@ -57,6 +57,7 @@ echo layout: post >> $file_path
 echo title:  \"$title\" >> $file_path
 echo date:   $current_date $current_time $current_timezone >> $file_path
 echo categories:  >> $file_path
+echo tags:  >> $file_path
 echo --- >> $file_path
 echo $file_path created!
 # -----------------------------------------------------------------

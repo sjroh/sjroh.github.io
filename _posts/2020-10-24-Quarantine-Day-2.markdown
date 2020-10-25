@@ -2,7 +2,8 @@
 layout: post
 title: "Quarantine Day 2"
 date: 2020-10-24 19:00:00 +0800
-categories: quarantine china
+categories: daily_life
+tags: quarantine china
 ---
 First Saturday of my quarantine.
 

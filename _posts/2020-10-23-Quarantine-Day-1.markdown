@@ -2,7 +2,8 @@
 layout: post
 title: "Quarantine Day 1"
 date: 2020-10-23 19:00:00 +0800
-categories: quarantine china
+categories: daily_life
+tags: quarantine china
 ---
 Top 'o the Morning' to ya!
 
