@@ -2,7 +2,8 @@
 layout: post
 title: "Not an hour, two hours of studying 0"
 date: 2020-10-25 15:00:00 +0800
-categories: setup mac python julia go
+categories: study
+tags: setup mac python julia go
 ---
 Since I factory reset my MacBook air, I had to set up some stuff for studying.
 
