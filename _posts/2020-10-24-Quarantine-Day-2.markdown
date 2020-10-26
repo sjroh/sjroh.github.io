@@ -30,4 +30,3 @@ I found a pattern of my meals. Each meal includes the below items.
 ![Lunch in quarantine facility](/pics/2020-10-24-3.jpg)
 
 ![Dinner in quarantine facility](/pics/2020-10-24-4.jpg)
-
