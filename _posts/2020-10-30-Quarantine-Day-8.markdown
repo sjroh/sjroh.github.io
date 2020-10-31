@@ -2,8 +2,8 @@
 layout: post
 title: "Quarantine Day 8"
 date: 2020-10-30 20:00:00 +0800
-categories:
-tags:
+categories: daily_life
+tags: quarantine china
 ---
 Second Friday Night.
 
