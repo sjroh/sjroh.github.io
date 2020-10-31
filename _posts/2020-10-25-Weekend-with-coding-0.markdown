@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Not an hour, two hours of studying 0"
+title: "Weekend with coding 0"
 date: 2020-10-25 15:00:00 +0800
 categories: study
 tags: setup mac python julia go
