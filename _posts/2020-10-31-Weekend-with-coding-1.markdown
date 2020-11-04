@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekend-with-coding 1"
+title: "Weekend with coding 1"
 date: 2020-10-31 11:00:00 +0800
 categories: study
 tags: ruby google_analytics jekyll
