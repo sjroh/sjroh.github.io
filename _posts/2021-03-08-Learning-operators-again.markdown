@@ -27,7 +27,7 @@ And recalling bitwise operators for both of C# and Python.
 |:---------|:-----|
 | ~        | Bitwise NOT; ~0 is -1 |
 | &        | Bitwise AND; 1 & 2 is 0 |
-| |        | Bitwise OR; 1 & 2 is 3 |
+| \|        | Bitwise OR; 1 & 2 is 3 |
 | ^        | Bitwise XOR; 5 ^ 3 is 6 |
 | <<       | Bitwise Left Shift; 1 << 1 is 2 |
 | >>       | Bitwise Right Shift; 1 >> 1 is 0 |
