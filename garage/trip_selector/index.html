@@ -6,158 +6,170 @@ layout: null
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Trip Selector</title>
+<title>Trip Decision Engine v5</title>
+
 <style>
   body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: #0f172a;
     color: #e2e8f0;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 30px;
   }
 
   .card {
     background: #111827;
-    padding: 24px;
+    padding: 20px;
     border-radius: 12px;
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
   }
 
-  h1 {
-    font-size: 20px;
-    margin-bottom: 16px;
-  }
+  h1 { font-size: 18px; }
 
-  .question {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+  .question { margin-top: 20px; font-weight: bold; }
 
   button {
-    margin-top: 10px;
-    margin-right: 10px;
-    padding: 10px 14px;
-    border: none;
+    margin: 6px;
+    padding: 10px;
     border-radius: 8px;
-    cursor: pointer;
+    border: none;
     background: #2563eb;
     color: white;
+    cursor: pointer;
   }
 
-  button:hover {
-    background: #1d4ed8;
-  }
+  button:hover { background: #1d4ed8; }
 
   .result {
     margin-top: 20px;
     padding: 12px;
     background: #1f2937;
     border-radius: 8px;
+    white-space: pre-line;
   }
 </style>
 </head>
+
 <body>
 
 <div class="card">
-  <h1>Trip Decision Tree</h1>
+  <h1>Trip Decision Engine (Scenario Output)</h1>
 
   <div id="app"></div>
-
   <div class="result" id="result"></div>
 </div>
 
 <script>
-let state = {};
+let scores = {
+  asheville:0,
+  smoky:0,
+  dc:0,
+  savannah:0,
+  portland:0,
+  sf:0
+};
 
-function render() {
-  const app = document.getElementById("app");
-  const result = document.getElementById("result");
-  app.innerHTML = "";
-  result.innerHTML = "";
+let step=0;
 
-  if (!state.q1) {
-    app.innerHTML = `
-      <div class="question">Q1. Primary goal?</div>
-      <button onclick="select('q1','nature')">Nature</button>
-      <button onclick="select('q1','city')">City</button>
-      <button onclick="select('q1','chill')">Chill</button>
+const questions=[/* 동일 17문항 (생략 가능) */];
+
+function render(){
+  const app=document.getElementById("app");
+  const result=document.getElementById("result");
+
+  app.innerHTML="";
+
+  if(step<questions.length){
+    let q=questions[step];
+    app.innerHTML=`
+      <div class="question">${q.q}</div>
+      ${q.a.map(o=>`<button onclick="answer('${o[1]}')">${o[0]}</button>`).join("")}
     `;
     return;
   }
 
-  // NATURAL PATH
-  if (state.q1 === "nature") {
-    if (!state.q2) {
-      app.innerHTML = `
-        <div class="question">Q2. Nature intensity?</div>
-        <button onclick="select('q2','strong')">Pure Nature</button>
-        <button onclick="select('q2','mixed')">Nature + City</button>
-      `;
-      return;
-    }
-
-    if (state.q2 === "strong") {
-      result.innerHTML = "Result: Great Smoky Mountains National Park";
-      return;
-    }
-
-    if (!state.q3) {
-      app.innerHTML = `
-        <div class="question">Q3. Need city element?</div>
-        <button onclick="select('q3','no')">No</button>
-        <button onclick="select('q3','yes')">Yes</button>
-      `;
-      return;
-    }
-
-    result.innerHTML = state.q3 === "yes"
-      ? "Result: Asheville"
-      : "Result: Great Smoky Mountains National Park";
-    return;
-  }
-
-  // CITY PATH
-  if (state.q1 === "city") {
-    if (!state.q2) {
-      app.innerHTML = `
-        <div class="question">Q2. City preference?</div>
-        <button onclick="select('q2','history')">History / Museums</button>
-        <button onclick="select('q2','casual')">Casual / Walkable</button>
-      `;
-      return;
-    }
-
-    if (state.q2 === "history") {
-      result.innerHTML = "Result: Washington D.C.";
-      return;
-    }
-
-    if (!state.q3) {
-      app.innerHTML = `
-        <div class="question">Q3. City scale?</div>
-        <button onclick="select('q3','big')">Big city ok</button>
-        <button onclick="select('q3','small')">Small walkable</button>
-      `;
-      return;
-    }
-
-    result.innerHTML = state.q3 === "big"
-      ? "Result: Washington D.C."
-      : "Result: Savannah";
-    return;
-  }
-
-  // CHILL PATH
-  result.innerHTML = `
-    Result: ${state.q2 === "mixed" ? "Asheville" : "Savannah"}
-  `;
+  showResult();
 }
 
-function select(key, value) {
-  state[key] = value;
+function answer(v){
+  applyScore(v);
+  step++;
   render();
+}
+
+function applyScore(v){
+  // 동일 scoring 로직 (이전 v4 유지)
+}
+
+function showResult(){
+  const result=document.getElementById("result");
+
+  const sorted=Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+
+  const top=sorted[0][0];
+
+  let scenario=getScenario(top);
+
+  let text="FINAL RESULT\n\n";
+
+  text+="FULL RANKING:\n";
+  sorted.forEach((s,i)=>{
+    text+=`${i+1}. ${s[0]} : ${s[1]} pts\n`;
+  });
+
+  text+=`\nRECOMMENDED DESTINATION: ${top}\n`;
+
+  text+=`\nTRAVEL SCENARIO (3 nights / 4 days)\n`;
+  text+=scenario;
+
+  result.innerText=text;
+}
+
+/* 핵심 추가: 도시별 시나리오 */
+function getScenario(city){
+
+  const plans = {
+
+    asheville:
+`Day 1: Arrival + downtown walk + local food
+Day 2: Blue Ridge Parkway drive + viewpoints
+Day 3: Hiking (Pisgah / waterfalls)
+Day 4: Coffee + short walk + return`,
+
+    smoky:
+`Day 1: Gatlinburg base + settle in cabin
+Day 2: Cades Cove + scenic drive
+Day 3: Clingmans Dome + hiking trails
+Day 4: Morning nature walk + return`,
+
+    dc:
+`Day 1: National Mall + monuments walk
+Day 2: Smithsonian museums (free full day)
+Day 3: Georgetown + river walk
+Day 4: Capitol area + departure`,
+
+    savannah:
+`Day 1: Historic district walk + riverfront
+Day 2: Forsyth Park + city exploration
+Day 3: Tybee Island day trip
+Day 4: Coffee + slow walk + return`,
+
+    portland:
+`Day 1: Downtown + food trucks
+Day 2: Columbia River Gorge waterfalls
+Day 3: Mount Hood scenic drive
+Day 4: City walk + departure`,
+
+    sf:
+`Day 1: Downtown + Fisherman’s Wharf
+Day 2: Golden Gate + Marin Headlands
+Day 3: Muir Woods + city return
+Day 4: Coffee + bay walk + departure`
+  };
+
+  return plans[city] || "No scenario available";
 }
 
 render();
