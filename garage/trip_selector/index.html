@@ -6,7 +6,7 @@ layout: null
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Trip Decision Engine v5</title>
+<title>Trip Decision Engine v5 Fixed</title>
 
 <style>
   body {
@@ -28,7 +28,10 @@ layout: null
 
   h1 { font-size: 18px; }
 
-  .question { margin-top: 20px; font-weight: bold; }
+  .question {
+    margin-top: 20px;
+    font-weight: bold;
+  }
 
   button {
     margin: 6px;
@@ -55,7 +58,7 @@ layout: null
 <body>
 
 <div class="card">
-  <h1>Trip Decision Engine (Scenario Output)</h1>
+  <h1>Trip Decision Engine (Fixed v5)</h1>
 
   <div id="app"></div>
   <div class="result" id="result"></div>
@@ -71,9 +74,28 @@ let scores = {
   sf:0
 };
 
-let step=0;
+let step = 0;
 
-const questions=[/* 동일 17문항 (생략 가능) */];
+/* ✅ FIXED: full questions restored */
+const questions = [
+  {q:"Q1. Focus?",a:[["Nature","nature"],["City","city"],["Balance","balance"]]},
+  {q:"Q2. Nature intensity?",a:[["Hard hiking","hard_nature"],["Light nature","light_nature"],["None","no_nature"]]},
+  {q:"Q3. City importance?",a:[["High","city_high"],["Mid","city_mid"],["Low","city_low"]]},
+  {q:"Q4. Budget?",a:[["Strict","cheap"],["Flexible","flex"]]},
+  {q:"Q5. Driving?",a:[["Yes","drive_yes"],["No","drive_no"]]},
+  {q:"Q6. Activity?",a:[["Active","active"],["Relax","relax"]]},
+  {q:"Q7. Crowds?",a:[["OK","crowd_yes"],["Avoid","crowd_no"]]},
+  {q:"Q8. Flight distance?",a:[["Long","long_flight"],["Short","short_flight"]]},
+  {q:"Q9. Weather (May)?",a:[["Warm OK","warm_ok"],["Cool OK","cool_ok"]]},
+  {q:"Q10. Scenery?",a:[["Mountain","mountain"],["Urban","urban"],["Coast","coast"]]},
+  {q:"Q11. Food importance?",a:[["High","food_high"],["Mid","food_mid"]]},
+  {q:"Q12. Photo/Instagram?",a:[["High","photo_high"],["Low","photo_low"]]},
+  {q:"Q13. Nature type?",a:[["Forest","forest"],["Mountain","mountain2"],["Beach","beach"]]},
+  {q:"Q14. Travel stress?",a:[["Low","stress_low"],["High","stress_high"]]},
+  {q:"Q15. Accommodation?",a:[["Hotel","hotel"],["Airbnb","airbnb"],["Cabin","cabin"]]},
+  {q:"Q16. Schedule density?",a:[["Packed","packed"],["Relaxed","relaxed"],["Balanced","balanced"]]},
+  {q:"Q17. Main priority?",a:[["Landmarks","landmark"],["Nature","nature_view"],["Vibe","vibe"]]}
+];
 
 function render(){
   const app=document.getElementById("app");
@@ -81,11 +103,12 @@ function render(){
 
   app.innerHTML="";
 
-  if(step<questions.length){
-    let q=questions[step];
-    app.innerHTML=`
+  if(step < questions.length){
+    const q = questions[step];
+
+    app.innerHTML = `
       <div class="question">${q.q}</div>
-      ${q.a.map(o=>`<button onclick="answer('${o[1]}')">${o[0]}</button>`).join("")}
+      ${q.a.map(o => `<button onclick="answer('${o[1]}')">${o[0]}</button>`).join("")}
     `;
     return;
   }
@@ -99,77 +122,75 @@ function answer(v){
   render();
 }
 
+/* simplified scoring core (stable version) */
 function applyScore(v){
-  // 동일 scoring 로직 (이전 v4 유지)
+
+  if(v==="nature"){scores.smoky+=3;scores.asheville+=2;scores.portland+=2;}
+  if(v==="city"){scores.dc+=3;scores.sf+=3;scores.savannah+=2;}
+  if(v==="balance"){scores.asheville+=3;scores.portland+=3;scores.dc+=2;}
+
+  if(v==="hard_nature"){scores.smoky+=3;}
+  if(v==="light_nature"){scores.asheville+=2;}
+  if(v==="no_nature"){scores.dc+=2;scores.sf+=2;}
+
+  if(v==="city_high"){scores.dc+=3;scores.sf+=3;}
+  if(v==="city_mid"){scores.dc+=2;scores.portland+=2;}
+  if(v==="city_low"){scores.smoky+=2;}
+
+  if(v==="cheap"){scores.asheville+=3;scores.smoky+=2;scores.savannah+=3;}
+  if(v==="flex"){scores.sf+=2;scores.dc+=2;}
+
+  if(v==="drive_yes"){scores.smoky+=3;scores.asheville+=2;}
+  if(v==="drive_no"){scores.dc+=3;scores.sf+=3;}
+
+  if(v==="active"){scores.smoky+=2;scores.portland+=2;}
+  if(v==="relax"){scores.savannah+=2;}
+
+  if(v==="crowd_no"){scores.asheville+=2;scores.smoky+=2;}
+  if(v==="crowd_yes"){scores.dc+=2;scores.sf+=2;}
+
+  if(v==="short_flight"){scores.asheville+=2;scores.smoky+=2;scores.dc+=2;}
+  if(v==="long_flight"){scores.sf+=2;scores.portland+=2;}
+
+  if(v==="urban"){scores.dc+=3;scores.sf+=3;}
+  if(v==="mountain"){scores.smoky+=3;scores.asheville+=2;}
+
+  if(v==="coast"){scores.savannah+=2;}
+  if(v==="vibe"){scores.savannah+=2;scores.portland+=2;}
+}
+
+function getScenario(city){
+
+  const plans={
+    asheville:`Day1: downtown\nDay2: Blue Ridge Parkway\nDay3: hiking\nDay4: return`,
+    smoky:`Day1: cabin\nDay2: Cades Cove\nDay3: Clingmans Dome\nDay4: return`,
+    dc:`Day1: monuments\nDay2: museums\nDay3: Georgetown\nDay4: return`,
+    savannah:`Day1: historic district\nDay2: parks\nDay3: Tybee Island\nDay4: return`,
+    portland:`Day1: downtown\nDay2: waterfalls\nDay3: Mount Hood\nDay4: return`,
+    sf:`Day1: downtown\nDay2: Golden Gate\nDay3: Muir Woods\nDay4: return`
+  };
+
+  return plans[city];
 }
 
 function showResult(){
+
   const result=document.getElementById("result");
 
   const sorted=Object.entries(scores).sort((a,b)=>b[1]-a[1]);
 
   const top=sorted[0][0];
 
-  let scenario=getScenario(top);
+  let text="FINAL RANKING\n\n";
 
-  let text="FINAL RESULT\n\n";
-
-  text+="FULL RANKING:\n";
   sorted.forEach((s,i)=>{
     text+=`${i+1}. ${s[0]} : ${s[1]} pts\n`;
   });
 
-  text+=`\nRECOMMENDED DESTINATION: ${top}\n`;
-
-  text+=`\nTRAVEL SCENARIO (3 nights / 4 days)\n`;
-  text+=scenario;
+  text+=`\nRECOMMENDED: ${top}\n\n`;
+  text+=`SCENARIO:\n${getScenario(top)}`;
 
   result.innerText=text;
-}
-
-/* 핵심 추가: 도시별 시나리오 */
-function getScenario(city){
-
-  const plans = {
-
-    asheville:
-`Day 1: Arrival + downtown walk + local food
-Day 2: Blue Ridge Parkway drive + viewpoints
-Day 3: Hiking (Pisgah / waterfalls)
-Day 4: Coffee + short walk + return`,
-
-    smoky:
-`Day 1: Gatlinburg base + settle in cabin
-Day 2: Cades Cove + scenic drive
-Day 3: Clingmans Dome + hiking trails
-Day 4: Morning nature walk + return`,
-
-    dc:
-`Day 1: National Mall + monuments walk
-Day 2: Smithsonian museums (free full day)
-Day 3: Georgetown + river walk
-Day 4: Capitol area + departure`,
-
-    savannah:
-`Day 1: Historic district walk + riverfront
-Day 2: Forsyth Park + city exploration
-Day 3: Tybee Island day trip
-Day 4: Coffee + slow walk + return`,
-
-    portland:
-`Day 1: Downtown + food trucks
-Day 2: Columbia River Gorge waterfalls
-Day 3: Mount Hood scenic drive
-Day 4: City walk + departure`,
-
-    sf:
-`Day 1: Downtown + Fisherman’s Wharf
-Day 2: Golden Gate + Marin Headlands
-Day 3: Muir Woods + city return
-Day 4: Coffee + bay walk + departure`
-  };
-
-  return plans[city] || "No scenario available";
 }
 
 render();
