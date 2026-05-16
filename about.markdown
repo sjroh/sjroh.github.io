@@ -11,3 +11,5 @@ Software Engineer (Back-End) @Schlumberger
 Texas A&M University, Class of 2016
 
 [LinkedIn](https://www.linkedin.com/in/sijineroh)
+
+[Resume](docs/resume.pdf)
